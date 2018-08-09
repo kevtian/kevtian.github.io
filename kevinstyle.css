@@ -1,11 +1,15 @@
-h1 {
-	font-family: Helvetica;
-	font-size: 20px;
-	color:black;
+#front-page-header {
+	text-align: center;
+	font-family: Roboto;
 }
+
+.jumbotron {
+	background-color: gray !important;
+}
+
 
 p {
 	font-family: Helvetica;
-	font-size: 15px;
+	font-size: 25px;
 	color:blue;
 }
