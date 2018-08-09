@@ -12,10 +12,36 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
   </head>
 
 <body>
+<script>
+$( document ).ready(function() {
+ $( "b#expand-all" ).click(function( event ) {
+    $("p#duke-logo-des").removeClass("hidden");
+    $("img#duke-logo").addClass("opaque");
+    $("p#volcano-pic-des").removeClass("hidden");
+    $("img#volcano-pic").addClass("opaque");
+	$("p#puppy-pic-des").removeClass("hidden");
+    $("img#puppy-pic").addClass("opaque");
+    $("b#expand-all").addClass("default-cursor");
+    });
+ $( "img#duke-logo" ).click(function( event ) {
+    $("p#duke-logo-des").removeClass("hidden");
+    $("img#duke-logo").addClass("opaque");
+	});
+ $( "img#volcano-pic" ).click(function( event ) {
+    $("p#volcano-pic-des").removeClass("hidden");
+    $("img#volcano-pic").addClass("opaque");
+    });
+ $( "img#puppy-pic" ).click(function( event ) {
+    $("p#puppy-pic-des").removeClass("hidden");
+    $("img#puppy-pic").addClass("opaque");
+    });
+});
+</script>
 <div class="jumbotron">
   <h1 id="title">Kevin Tian</h1>
 </div>
@@ -29,16 +55,43 @@
 <div class="container" id="about-me">
   <div class="row">
   	<h3 class="col-xs-12" id="header-titles"><b>about me</b></h3>
+  	<br>
+  	<hr>
   </div>
-  <div class="row">
-  	<img class="col-xs-2" src="duke.png" alt="Duke logo">
-  	<p class="col-xs-10">Hey I'm Kevin, nice to meet you! I'm currently a <b>sophomore</b> at <b>Duke University</b> studying Computer Science, with a focus on all-things design.</p>
+   <div class="row">
+  	<p class="col-xs-12">Hey I'm Kevin, it's a pleasure to meet you! <b>Click</b> each of the photos to get to know me, or click <b id="expand-all" style="cursor: pointer;">here</b> to expand all sections.</p>
   </div>
   <br>
+  <br>
   <div class="row">
-  	<img class="col-xs-2" src="volcano-pic.JPG" alt="Kevin on a volcano">
-  	<p class="col-xs-10">I love exploring the great outdoors, taking lots of pictures with my Google Pixel, and appreciating clever, usable design in everyday life. Check out this cool pic of me on an active volcano!</p>
+  	<img class="col-xs-2 about-me-img pointer" id="duke-logo" src="duke-logo.png" alt="Duke logo">
+  	<p class="col-xs-10 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
   </div>
+  <br>
+  <br>
+  <div class="row">
+  	<img class="col-xs-2 about-me-img pointer" id="volcano-pic" src="volcano-pic.JPG" alt="Kevin on a volcano">
+  	<p class="col-xs-10 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most <a href="https://www.bbc.com/news/world-latin-america-31708312">active volcano!</a></p>
+  </div>
+  <br>
+  <br>
+  <div class="row">
+  	<img class="col-xs-2 about-me-img pointer" id="puppy-pic" src="puppy.JPG" alt="puppy love">
+  	<p class="col-xs-10 hidden" id="puppy-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2. I love puppies!</p>
+  </div>
+</div>
+<br>
+<br>
+<div class="container" id="contact-me">
+  <div class="row">
+  	<h3 class="col-xs-12" id="header-titles"><b>contact</b></h3>
+  	<br>
+  	<hr>
+  </div>
+  <div class="row">
+  	<p class="col-xs-12">Like what you see? <br> Get in touch at kevin.tian<span style="display:none">obfuscate</span>@duke.edu</p>
+  </div>
+</div>
 <div class="container" id="footer">
   <div class="row">
     <img class="col-xs-12" id="kt-logo" src="kt-logo.svg">

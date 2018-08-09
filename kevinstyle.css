@@ -6,6 +6,7 @@
 
 #header-titles {
 	font-family: "Montserrat",sans-serif;
+	font-size:25px;
 }
 
 #kt-logo {
@@ -22,6 +23,34 @@
 	font-size-adjust: all;
 }
 
+b.default-cursor {
+	cursor: default !important;
+}
+
+img.about-me-img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	opacity: 0.5;
+}
+
+img.about-me-img:hover {
+	opacity:1;
+}
+
+img.pointer {
+	cursor: pointer;
+}
+
+img.opaque {
+	opacity:1;
+	cursor: default;
+}
+
+p.hidden {
+	visibility: hidden;
+}
+
 .row {
 	display:flex;
 	align-items: center;
@@ -29,10 +58,6 @@
 
 .jumbotron {
 	background-color: tomato !important;
-}
-
-img {
-	border-radius: 25%;
 }
 
 p {
