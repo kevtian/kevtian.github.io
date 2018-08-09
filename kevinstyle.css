@@ -1,15 +1,47 @@
-#front-page-header {
+#header-links {
+	font-family: "Montserrat",sans-serif;
+	font-size: 20px;
 	text-align: center;
-	font-family: Roboto;
+}
+
+#header-titles {
+	font-family: "Montserrat",sans-serif;
+}
+
+#kt-logo {
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 100px;
+	height:auto;
+}
+
+#title {
+	text-align: center;
+	font-family: "Merriweather",serif;
+	font-size-adjust: all;
+}
+
+.row {
+	display:flex;
+	align-items: center;
 }
 
 .jumbotron {
-	background-color: gray !important;
+	background-color: tomato !important;
+}
+
+img {
+	border-radius: 25%;
+}
+
+p {
+	font-family: "Montserrat",sans-serif;
 }
 
 
-p {
-	font-family: Helvetica;
-	font-size: 25px;
-	color:blue;
+@media only screen and (min-width: 768px) {
+	#kt-logo {max-width: 150px;height: auto;}
+	p {font-size: 20px;}
+
 }
