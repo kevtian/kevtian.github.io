@@ -1,13 +1,13 @@
 #header-links {
 	font-family: "Montserrat",sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	text-align: center;
 	overflow: hidden;
 }
 
 #header-links a {
 	text-align: center;
-	text-decoration: none;
+	text-decoration: overline;
 	margin:0px 15px;
 	padding:0px;
 }
@@ -15,7 +15,7 @@
 #header-titles {
 	font-family: "Montserrat",sans-serif;
 	font-size:25px;
-	margin: 40px 0px 15px 0px;
+	margin: 42px 0px 15px 0px;
 }
 
 #kt-logo {
@@ -61,21 +61,23 @@ p.hidden {
 }
 
 a {
+	background-color: lightgray;
     color: black !important;
     position: static;
 }
 
 a:hover {
-	border-style: none none solid solid;
-	border-radius: 1px;
+	background-color: black;
+	text-decoration: none !important;
+	color:tomato !important;
 }
 
 .sticky {
-	position: fixed;
+	position: fixed !important;
 	top: 0;
 	left:0;
 	width:100%;
-	z-index: 100;
+	z-index: 9999 !important;
 	border-top: 0;
 	background-color: tomato;
 }
@@ -87,7 +89,8 @@ a:hover {
 
 .jumbotron {
 	background-color: tomato !important;
-	height:200px;
+	font-size:50px;
+	height:175px;
 }
 
 p {
@@ -95,11 +98,19 @@ p {
 }
 
 ul {
+	text-align: center;
+	width: 100%;
 	padding: 0;
+}
+
+body {
+	position:relative;
 }
 
 @media only screen and (min-width: 768px) {
 	#kt-logo {max-width: 150px;height: auto;}
-	p {font-size: 20px;}
+	#header-links{font-size:25px;}
+	#header-titles{font-size:30px;}
+	p {font-size: 25px;}
 
 }
