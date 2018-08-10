@@ -16,7 +16,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
   </head>
 
-<body>
 <script>
 $( document ).ready(function() {
  $( "b#expand-all" ).click(function( event ) {
@@ -40,16 +39,77 @@ $( document ).ready(function() {
     $("p#puppy-pic-des").removeClass("hidden");
     $("img#puppy-pic").addClass("opaque");
     });
+var stickyNavTop = $('.kevnav').offset().top;
+var stickyNav= function() {
+	var scrollTop = $(window).scrollTop();
+  if (scrollTop >= stickyNavTop) {
+    $('.kevnav').addClass("sticky")
+  } else {
+    $('.kevnav').removeClass("sticky");
+  }
+};
+stickyNav();
+$(window).scroll(function() {
+	stickyNav();
 });
+});
+
+var shiftWindow = function() { scrollBy(0, -50) };
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
 </script>
+
+<body>
 <div class="jumbotron">
   <h1 id="title">Kevin Tian</h1>
 </div>
-<div class="container" id="header-links">
+<div class="container">
+  <div class="kevnav" id="header-links">
+  	<ul style="text-align: center; width:100%;">
+  	  <a href="#portfolio">portfolio</a>
+  	  <a href="#about-me">about me</a>
+  	  <a href="#contact">contact</a>
+  	</ul>
+  </div>
+</div>
+<div class="container">
   <div class="row">
-  	<p class="col-xs-4">portfolio</p>
-    <p class="col-xs-4">about me</p>
-    <p class="col-xs-4">contact</p>
+    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg">
+  </div>
+</div>
+<div class="container" id="portfolio">
+  <div class="row">
+  	<h3 class="col-xs-12" id="header-titles"><b>portfolio</b></h3>
+  	<br>
+  	<hr>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+   	<div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
+    <div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
+    <div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
+  </div>
+</div>
+<br>
+<div class="container">
+  <div class="row">
+   	<div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
+    <div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
+    <div class="col-xs-4">
+  	<img src="puppy-full.jpg" class="img-responsive" alt="puppy">
+    </div>
   </div>
 </div>
 <div class="container" id="about-me">
@@ -59,30 +119,30 @@ $( document ).ready(function() {
   	<hr>
   </div>
    <div class="row">
-  	<p class="col-xs-12">Hey I'm Kevin, it's a pleasure to meet you! <b>Click</b> each of the photos to get to know me, or click <b id="expand-all" style="cursor: pointer;">here</b> to expand all sections.</p>
+  	<p class="col-xs-12">Hey, my name is Kevin and it's nice to meet you! <b>Click</b> each of the photos to get to know me, or click <b id="expand-all" style="cursor: pointer;">here</b> to expand all sections.</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-2 about-me-img pointer" id="duke-logo" src="duke-logo.png" alt="Duke logo">
-  	<p class="col-xs-10 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
+  	<img class="col-xs-4 about-me-img pointer" id="duke-logo" src="duke-logo-full.png" alt="Duke logo">
+  	<p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-2 about-me-img pointer" id="volcano-pic" src="volcano-pic.JPG" alt="Kevin on a volcano">
-  	<p class="col-xs-10 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most <a href="https://www.bbc.com/news/world-latin-america-31708312">active volcano!</a></p>
+  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="volcano-pic-full.JPG" alt="Kevin on a volcano">
+  	<p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most <a href="https://www.bbc.com/news/world-latin-america-31708312">active volcano!</a></p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-2 about-me-img pointer" id="puppy-pic" src="puppy.jpg" alt="puppy love">
-  	<p class="col-xs-10 hidden" id="puppy-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2. I love puppies!</p>
+  	<img class="col-xs-4 about-me-img pointer" id="puppy-pic" src="puppy-full.jpg" alt="puppy love">
+  	<p class="col-xs-8 hidden" id="puppy-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2. I love puppies!</p>
   </div>
 </div>
 <br>
 <br>
-<div class="container" id="contact-me">
+<div class="container" id="contact">
   <div class="row">
   	<h3 class="col-xs-12" id="header-titles"><b>contact</b></h3>
   	<br>
@@ -92,9 +152,12 @@ $( document ).ready(function() {
   	<p class="col-xs-12">Like what you see? <br> Get in touch at kevin.tian<span style="display:none">obfuscate</span>@duke.edu</p>
   </div>
 </div>
+<br>
+<br>
+<br>
 <div class="container" id="footer">
   <div class="row">
-    <img class="col-xs-12" id="kt-logo" src="kt-logo.svg">
+    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg">
   </div>
 </div>
 </body>
