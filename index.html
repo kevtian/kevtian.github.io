@@ -23,8 +23,8 @@ $( document ).ready(function() {
     $("img#duke-logo").addClass("opaque");
     $("p#volcano-pic-des").removeClass("hidden");
     $("img#volcano-pic").addClass("opaque");
-	$("p#puppy-pic-des").removeClass("hidden");
-    $("img#puppy-pic").addClass("opaque");
+	$("p#getty-pic-des").removeClass("hidden");
+    $("img#getty-pic").addClass("opaque");
     $("b#expand-all").addClass("default-cursor");
     });
  $( "img#duke-logo" ).click(function( event ) {
@@ -35,9 +35,9 @@ $( document ).ready(function() {
     $("p#volcano-pic-des").removeClass("hidden");
     $("img#volcano-pic").addClass("opaque");
     });
- $( "img#puppy-pic" ).click(function( event ) {
-    $("p#puppy-pic-des").removeClass("hidden");
-    $("img#puppy-pic").addClass("opaque");
+ $( "img#getty-pic" ).click(function( event ) {
+    $("p#getty-pic-des").removeClass("hidden");
+    $("img#getty-pic").addClass("opaque");
     });
 var stickyNavTop = $('.kevnav').offset().top;
 var stickyNav= function() {
@@ -89,7 +89,7 @@ $(window).scroll(function() {
 <br>
 <div class="container">
   <div class="row">
-    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg">
+    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg" alt="kt-logo">
   </div>
 </div>
 <br>
@@ -100,32 +100,16 @@ $(window).scroll(function() {
   	<hr>
   </div>
 </div>
-<br>
-<div class="container">
+<div class="container" id="portfolio">
   <div class="row">
-   	<div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
-    <div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
-    <div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
+    <p class="col-xs-12">Coming soon! Meanwhile, check out some highlights of my photos.</p>
+    <br>
   </div>
-</div>
-<br>
-<div class="container">
   <div class="row">
-   	<div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
-    <div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
-    <div class="col-xs-4">
-  	<img src="dog-dock.jpg" class="img-responsive" alt="puppy">
-    </div>
+    <img class="col-xs-4 zoom" src="reflection.jpg" href="/reflection.jpg" alt="road with reflection">
+    <img class="col-xs-4 zoom" src="market.jpg" alt="Valdivia fish market">
+    <img class="col-xs-4 zoom" src="moss.jpg" alt="moss in sunlight">
+    <br>
   </div>
 </div>
 <div class="container" id="about-me">
@@ -146,14 +130,14 @@ $(window).scroll(function() {
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="volcano-pic-full.JPG" alt="Kevin on a volcano">
   	<p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most <a href="https://www.bbc.com/news/world-latin-america-31708312">active volcano!</a></p>
+  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="volcano-pic-full.JPG" alt="Kevin on a volcano">
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="puppy-pic" src="dog-dock.jpg" alt="puppy love">
-  	<p class="col-xs-8 hidden" id="puppy-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2.</p>
+  	<img class="col-xs-4 about-me-img pointer" id="getty-pic" src="getty.jpg" alt="the Getty Center">
+  	<p class="col-xs-8 hidden" id="getty-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2.</p>
   </div>
 </div>
 <br>
@@ -165,20 +149,23 @@ $(window).scroll(function() {
   	<hr>
   </div>
   <div class="row">
-  	<p class="col-xs-12">Like what you see?<br> Get in touch at kevin.tian<span style="display:none">obfuscate</span>@duke.edu</p>
+  	<p class="col-xs-12">Want to speak with me?<br>Send me an email at <em>wave<span style="display:none">obfuscate</span>@kevtian.com</em><br></p>
   </div>
   <div class="row">
-  	<img class="col-xs-12" src="two-steps.svg" alt="two easy steps">
+  	<img class="col-xs-12" src="three-steps.svg" alt="three easy steps">
   </div>
 </div>
 <br>
-<br>
-<br>
-<div class="container" id="footer">
-  <div class="row">
+<div class="container-fluid" id="footer">
+  <div class="row justify-content-center">
     <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg">
+  </div>
+  <div class= "row">
+    <p class="col-xs-12"><small>Designed by Kevin Tian &copy; <script type="text/javascript">
+    var d = new Date()
+    document.write(d.getFullYear())
+    </script></small></p>
   </div>
 </div>
 </body>
-
 </html>
