@@ -7,26 +7,26 @@
     <title>Kevin Tian</title>
     <link rel="stylesheet" href="kevinstyle.css">
     <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
 	<script>{
       "@context": "https://kevtian.com",
       "@type": "Person",
       "name": "Kevin Tian",
       "email": "contact@kevtian.com",
-      "hasOccupation:": "student",
+      "hasOccupation": "student",
       "affiliation": "Duke University",
    }</script>
   </head>
 
 <script>
 $( document ).ready(function() {
- $( "b#expand-all" ).click(function( event ) {
+ $( "a#about-link" ).click(function( event ) {
     $("p#duke-logo-des").removeClass("hidden");
     $("img#duke-logo").addClass("opaque");
     $("p#volcano-pic-des").removeClass("hidden");
@@ -35,49 +35,51 @@ $( document ).ready(function() {
     $("img#getty-pic").addClass("opaque");
     $("b#expand-all").addClass("default-cursor");
     });
- $( "img#duke-logo" ).click(function( event ) {
-    $("p#duke-logo-des").removeClass("hidden");
-    $("img#duke-logo").addClass("opaque");
-	});
- $( "img#volcano-pic" ).click(function( event ) {
-    $("p#volcano-pic-des").removeClass("hidden");
-    $("img#volcano-pic").addClass("opaque");
-    });
- $( "img#getty-pic" ).click(function( event ) {
-    $("p#getty-pic-des").removeClass("hidden");
-    $("img#getty-pic").addClass("opaque");
-    });
-var stickyNavTop = $('.kevnav').offset().top;
-var stickyNav= function() {
+ var stickyNavTop = $('.kevnav').offset().top;
+ var stickyNav= function() 
+ {
 	var scrollTop = $(window).scrollTop();
-  if (scrollTop >= stickyNavTop) {
-    $('.kevnav').addClass("sticky")
-  } else {
-    $('.kevnav').removeClass("sticky");
-  }
-};
-stickyNav();
-$(window).scroll(function() {
+	if (scrollTop >= stickyNavTop) 
+	{
+		$('.kevnav').addClass("sticky")
+    } else 
+    {
+    	$('.kevnav').removeClass("sticky");
+    }
+ };
+ stickyNav();
+ $(window).scroll(function() 
+ {
 	stickyNav();
-});
-  // Add smooth scrolling on all links inside the navbar
-  $("#header-links a").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
+	var scroll = $(window).scrollTop();
+	var os = $("#about-me").offset().top;
+	var ht = $("#about-me").height();
+		if (scroll > os + ht)
+	    {
+	    	$("p#duke-logo-des").removeClass("hidden");
+	        $("img#duke-logo").addClass("opaque");
+	        $("p#volcano-pic-des").removeClass("hidden");
+	        $("img#volcano-pic").addClass("opaque");
+	        $("p#getty-pic-des").removeClass("hidden");
+	        $("img#getty-pic").addClass("opaque");
+	    }
+
+ });
+ $("#header-links a").on('click', function(event) 
+ {
+    if (this.hash !== "") 
+    {
       event.preventDefault();
-      // Store hash
       var hash = this.hash;
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+      $('html, body').animate(
+      {
         scrollTop: $(hash).offset().top
-      }, 800, function(){
-        // Add hash (#) to URL when done scrolling (default click behavior)
+      }, 800, function()
+      {
         window.location.hash = hash;
       });
-    }  // End if
-});
+    }
+ });
 });
 </script>
 
@@ -89,7 +91,7 @@ $(window).scroll(function() {
   <div class="kevnav" id="header-links">
   	<ul>
   	  <a href="#portfolio">portfolio</a>
-  	  <a href="#about-me">about me</a>
+  	  <a href="#about-me" id="about-link">about me</a>
   	  <a href="#contact">contact</a>
   	</ul>
   </div>
@@ -97,7 +99,7 @@ $(window).scroll(function() {
 <br>
 <div class="container">
   <div class="row">
-    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg" alt="kt-logo">
+    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt-logo">
   </div>
 </div>
 <br>
@@ -114,37 +116,34 @@ $(window).scroll(function() {
     <br>
   </div>
 <!--   <div class="row">
-    <img class="col-xs-4 zoom" src="reflection.jpg" href="/reflection.jpg" alt="road with reflection">
-    <img class="col-xs-4 zoom" src="market.jpg" alt="Valdivia fish market">
-    <img class="col-xs-4 zoom" src="moss.jpg" alt="moss in sunlight">
+    <img class="col-xs-4 zoom" src="media/reflection.jpg" href="/reflection.jpg" alt="road with reflection">
+    <img class="col-xs-4 zoom" src="media/market.jpg" alt="Valdivia fish market">
+    <img class="col-xs-4 zoom" src="media/moss.jpg" alt="moss in sunlight">
     <br>
   </div> -->
 </div>
-<div class="container" id="about-me">
+<div class="row" id="about-me"></div>
+<div class="container">
   <div class="row">
   	<h3 class="col-xs-12" id="header-titles"><b>about me</b></h3>
   	<br>
   	<hr>
   </div>
-   <div class="row">
-  	<p class="col-xs-12">Hey, my name is Kevin and it's nice to meet you! Click each of the photos to get to know me, or click <b id="expand-all" style="cursor: pointer;">here</b> to expand all sections.</p>
-  </div>
-  <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="duke-logo" src="duke-logo-full.png" alt="Duke logo">
+  	<img class="col-xs-4 about-me-img pointer" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo">
   	<p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most <a href="https://www.bbc.com/news/world-latin-america-31708312">active volcano!</a></p>
-  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="volcano-pic-full.JPG" alt="Kevin on a volcano">
+  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano">
+  	<p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most active volcano, Villarrica!</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="getty-pic" src="getty.jpg" alt="the Getty Center">
+  	<img class="col-xs-4 about-me-img pointer" id="getty-pic" src="media/getty.jpg" alt="the Getty Center">
   	<p class="col-xs-8 hidden" id="getty-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2.</p>
   </div>
 </div>
@@ -160,13 +159,13 @@ $(window).scroll(function() {
   	<p class="col-xs-12">Want to speak with me?<br>Send me an email at <em>wave<span style="display:none">obfuscate</span>@kevtian.com</em><br></p>
   </div>
   <div class="row">
-  	<img class="col-xs-12" src="three-steps.svg" alt="three easy steps">
+  	<img class="col-xs-12" src="media/three-steps.svg" alt="three easy steps">
   </div>
 </div>
 <br>
 <div class="container-fluid" id="footer">
   <div class="row justify-content-center">
-    <img class="col-xs-12" id="kt-logo" src="kt-logo-border.svg">
+    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt-logo">
   </div>
   <div class= "row">
     <p class="col-xs-12"><small>Designed by Kevin Tian &copy; <script type="text/javascript">
