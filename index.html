@@ -27,77 +27,22 @@
 
 <script>
 $( document ).ready(function() {
- $( "a#about-link" ).click(function( event ) {
-    $("p#duke-logo-des").removeClass("hidden");
-    $("img#duke-logo").addClass("opaque");
-    $("p#volcano-pic-des").removeClass("hidden");
-    $("img#volcano-pic").addClass("opaque");
-	$("p#getty-pic-des").removeClass("hidden");
-    $("img#getty-pic").addClass("opaque");
-    $("b#expand-all").addClass("default-cursor");
-    });
- var stickyNavTop = $('.kevnav').offset().top;
- var stickyNav= function() 
- {
-	var scrollTop = $(window).scrollTop();
-	if (scrollTop >= stickyNavTop) 
-	{
-		$('.kevnav').addClass("sticky")
-    } else 
-    {
-    	$('.kevnav').removeClass("sticky");
-    }
- };
- stickyNav();
- $(window).scroll(function() 
- {
-	stickyNav();
-	var scroll = $(window).scrollTop();
-	var os = $("#about-me").offset().top;
-	var ht = $("#about-me").height();
-		if (scroll > os + ht)
-	    {
-	    	$("p#duke-logo-des").removeClass("hidden");
-	        $("img#duke-logo").addClass("opaque");
-	        $("p#volcano-pic-des").removeClass("hidden");
-	        $("img#volcano-pic").addClass("opaque");
-	        $("p#getty-pic-des").removeClass("hidden");
-	        $("img#getty-pic").addClass("opaque");
-	    }
-
- });
- $("#header-links a").on('click', function(event) 
- {
-    if (this.hash !== "") 
-    {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      }, 800, function()
-      {
-        window.location.hash = hash;
-      });
-    }
- });
+ $('body').addClass('loaded');
 });
 </script>
 
 <body>
+<!-- PRELOADER -->
+<div>
+	<div id="loader-wrapper">
+	<div id="loader"></div>
+	<div class="loader-section section-left"></div>
+	<div class="loader-section section-right"></div>
+</div>
+<!-- HEAD OF DOC -->
 <div class="jumbotron">
   <h1 id="title">Kevin Tian</h1>
-</div>
-<div class="container">
-  <div class="kevnav" id="header-links">
-  	<ul>
-  	  <a href="#portfolio">portfolio</a>
-  	  <a href="#about-me" id="about-link">about me</a>
-  	  <a href="#contact">contact</a>
-  	</ul>
-  </div>
-</div>
-<br>
+</div><br>
 <div class="container">
   <div class="row">
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt logo">
