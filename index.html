@@ -8,60 +8,83 @@
     <link rel="stylesheet" href="kevinstyle.css">
     <!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
-	<script type="application/ld+json">
-		{
-			"@context": "https://kevtian.com",
-			"@type": "Person",
-			"name": "Kevin Tian",
-			"email": "contact@kevtian.com",
-			"hasOccupation": "student",
-			"affiliation": "Duke University",
-		}
-	</script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://kevtian.com",
+      "@type": "Person",
+      "name": "Kevin Tian",
+      "email": "contact@kevtian.com",
+      "hasOccupation": "student",
+      "affiliation": "Duke University",
+    }
+  </script>
   </head>
 
 <script>
 $( document ).ready(function() {
-	/*loader*/
-	setTimeout(function(){
+  /*loader*/
+  setTimeout(function(){
         $('body').addClass('loaded')
-    }, 1000);
-	/*modal*/
-	var modal1=document.getElementById('myModal1');
-	var modal2=document.getElementById('myModal2');
-	var modal3=document.getElementById('myModal3');
-	var span=document.getElementById('close');
-	span.onclick=function() {
-		modal1.style.display="none";
-		modal2.style.display="none";
-		modal3.style.display="none";
-	}
-	window.onclick=function(event) {
-		if(event.target==modal1) {
-			modal1.style.display="none";
-		}else if (event.target==modal2) {
-			modal2.style.display="none";
-		}else if (event.target==modal3)
-		{
-			modal3.style.display="none";
-		}
-	}
+    }, 2000);
+  /*modal*/
+  var modal1=document.getElementById('myModal1');
+  var modal2=document.getElementById('myModal2');
+  var modal3=document.getElementById('myModal3');
+  $(window).scroll(function() {
+    modal1.style.display="none";
+    modal2.style.display="none";
+    modal3.style.display="none";
+
+    var scroll = $(window).scrollTop();
+    var os = $("#about-me").offset().top;
+    var ht = $("#about-me").height();
+    if ($(window).width() > 768) 
+    {
+      if (scroll > os + ht - 100)
+        {
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#duke-logo").addClass("animated slideInLeft slower");
+        }
+        if (scroll > os + ht - 75) 
+        {
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#volcano-pic").addClass("animated slideInLeft slower");
+        }
+        if (scroll > os + ht - 50)
+        {
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#getty-pic").addClass("animated slideInLeft");
+        }
+    }
+    else 
+    {
+      if (scroll > os + ht - 100)
+        {
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#duke-logo").addClass("animated slideInLeft slower");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#volcano-pic").addClass("animated slideInLeft slower");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
+          $("img#getty-pic").addClass("animated slideInLeft");
+        }
+    }
+    });
 });
 </script>
 
 <body>
 <!-- PRELOADER -->
 <div>
-	<div id="loader-wrapper">
-	<div id="loader"><img src="media/kt-logo.svg">
-	</div>
-	<div id="loading-text"><p>designing...</p></div>
-	<div class="loader-section"></div>
+  <div id="loader-wrapper">
+  <div id="loader"><img src="media/kt-logo.svg">
+  </div>
+  <div id="loading-text"><p>designing...</p></div>
+  <div class="loader-section"></div>
 </div>
 </div>
 <!-- HEAD OF DOC -->
@@ -77,83 +100,80 @@ $( document ).ready(function() {
 <br>
 <div class="container" id="portfolio">
   <div class="row">
-  	<h3 class="col-xs-12" id="header-titles"><b>portfolio</b></h3>
-  	<br>
-  	<hr>
+    <h3 class="col-xs-12" id="header-titles"><b>portfolio</b></h3>
+    <br>
+    <hr>
   </div>
 </div>
 <div class="container" id="portfolio">
   <div class="row">
-    <p class="col-xs-12">Coming soon!</p>
+    <p class="col-xs-12">photography</p>
     <br>
   </div>
 <div class="row">
     <img class="col-xs-4" src="media/reflection.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
     <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
     <div id="myModal1" class="modal">
-    	<div class="modal-content clearfix">
-    		<span class="close" id="close">&times;</span>
-    		<img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
-    		<br><p class="text-center" style="margin:10px;"><b>reflective road</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
-    	</div>     
+      <div class="modal-content clearfix">
+        <img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
+        <br><p class="text-center" style="margin:10px;"><b>reflective road</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]<br><small>scroll to close</small></p></div>
+      </div>     
     <img class="col-xs-4" src="media/market.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
     <script> function fishPicFunction() {document.getElementById("myModal2").style.display="block";}</script>
     <div id="myModal2" class="modal">
-    	<div class="modal-content clearfix">
-    		<span class="close" id="close">&times;</span>
-    		<img class="row modal-image" src="media/market.jpg" alt="sensory overload">
-    		<br><p class="text-center" style="margin:10px;"><b>sensory overload</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
-    	</div>  
+      <div class="modal-content clearfix">
+        <img class="row modal-image" src="media/market.jpg" alt="sensory overload">
+        <br><p class="text-center" style="margin:10px;"><b>sensory overload</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]<br><small>scroll to close</small></p></p></div>
+      </div>  
     <img class="col-xs-4" src="media/moss.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}
 </script>
     <div id="myModal3" class="modal">
-    	<div class="modal-content clearfix">
-    		<span class="close" id="close">&times;</span>
-    		<img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
-    		<br><p class="text-center" style="margin:10px;"><b>glistening moss</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
-    	</div> 
+      <div class="modal-content clearfix">
+        <img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
+        <br><p class="text-center" style="margin:10px;"><b>glistening moss</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]<br><small>scroll to close</small></p></p></div>
+      </div> 
     <br>
   </div>
 </div>
 <div class="row" id="about-me"></div>
 <div class="container">
   <div class="row">
-  	<h3 class="col-xs-12" id="header-titles"><b>about me</b></h3>
-  	<br>
-  	<hr>
+    <h3 class="col-xs-12" id="header-titles"><b>about me</b></h3>
+    <br>
+    <hr>
   </div>
   <br>
   <div class="row">
     <img class="col-xs-4 about-me-img pointer" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo">
-  	<p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
+    <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on all-things design.</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano">
-  	<p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most active volcano, Villarrica!</p>
+    <img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano">
+    <p class="col-xs-8 hidden" id="volcano-pic-des">I love exploring the great outdoors and taking in all that nature has to offer. Check out this cool pic of me on the summit of Chile's most active volcano, Villarrica!</p>
   </div>
   <br>
   <br>
   <div class="row">
-  	<img class="col-xs-4 about-me-img pointer" id="getty-pic" src="media/getty.jpg" alt="the Getty Center">
-  	<p class="col-xs-8 hidden" id="getty-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2.</p>
+    <img class="col-xs-4 about-me-img pointer" id="getty-pic" src="media/getty.jpg" alt="the Getty Center">
+    <p class="col-xs-8 hidden" id="getty-pic-des">In addition to playing sports and traveling the world, one of my favorite hobbies is taking lots of pictures with my Google Pixel 2.</p>
   </div>
 </div>
 <br>
 <br>
 <div class="container" id="contact">
   <div class="row">
-  	<h3 class="col-xs-12" id="header-titles"><b>contact</b></h3>
-  	<br>
-  	<hr>
+    <h3 class="col-xs-12" id="header-titles"><b>contact</b></h3>
+    <br>
+    <hr>
   </div>
   <div class="row">
-  	<p class="col-xs-12">Let's get in touch.<br>Email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
+    <p class="col-xs-12">Let's get in touch.<br>Email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
   </div>
   <div class="row">
-  	<img class="col-xs-12" src="media/three-steps.svg" alt="three easy steps">
+    <img class="col-xs-12" src="media/three-steps.svg" alt="three easy steps">
   </div>
 </div>
 <br>
