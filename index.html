@@ -27,75 +27,46 @@
 
 <script>
 $( document ).ready(function() {
- $( "a#about-link" ).click(function( event ) {
-    $("p#duke-logo-des").removeClass("hidden");
-    $("img#duke-logo").addClass("opaque");
-    $("p#volcano-pic-des").removeClass("hidden");
-    $("img#volcano-pic").addClass("opaque");
-	$("p#getty-pic-des").removeClass("hidden");
-    $("img#getty-pic").addClass("opaque");
-    $("b#expand-all").addClass("default-cursor");
-    });
- var stickyNavTop = $('.kevnav').offset().top;
- var stickyNav= function() 
- {
-	var scrollTop = $(window).scrollTop();
-	if (scrollTop >= stickyNavTop) 
-	{
-		$('.kevnav').addClass("sticky")
-    } else 
-    {
-    	$('.kevnav').removeClass("sticky");
-    }
- };
- stickyNav();
- $(window).scroll(function() 
- {
-	stickyNav();
-	var scroll = $(window).scrollTop();
-	var os = $("#about-me").offset().top;
-	var ht = $("#about-me").height();
-		if (scroll > os + ht)
-	    {
-	    	$("p#duke-logo-des").removeClass("hidden");
-	        $("img#duke-logo").addClass("opaque");
-	        $("p#volcano-pic-des").removeClass("hidden");
-	        $("img#volcano-pic").addClass("opaque");
-	        $("p#getty-pic-des").removeClass("hidden");
-	        $("img#getty-pic").addClass("opaque");
-	    }
-
- });
- $("#header-links a").on('click', function(event) 
- {
-    if (this.hash !== "") 
-    {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate(
-      {
-        scrollTop: $(hash).offset().top
-      }, 800, function()
-      {
-        window.location.hash = hash;
-      });
-    }
- });
+	/*loader*/
+	setTimeout(function(){
+        $('body').addClass('loaded')
+    }, 1000);
+	/*modal*/
+	var modal1=document.getElementById('myModal1');
+	var modal2=document.getElementById('myModal2');
+	var modal3=document.getElementById('myModal3');
+	var span=document.getElementById('close');
+	span.onclick=function() {
+		modal1.style.display="none";
+		modal2.style.display="none";
+		modal3.style.display="none";
+	}
+	window.onclick=function(event) {
+		if(event.target==modal1) {
+			modal1.style.display="none";
+		}else if (event.target==modal2) {
+			modal2.style.display="none";
+		}else if (event.target==modal3)
+		{
+			modal3.style.display="none";
+		}
+	}
 });
 </script>
 
 <body>
+<!-- PRELOADER -->
+<div>
+	<div id="loader-wrapper">
+	<div id="loader"><img src="media/kt-logo.svg">
+	</div>
+	<div id="loading-text"><p>designing...</p></div>
+	<div class="loader-section"></div>
+</div>
+</div>
+<!-- HEAD OF DOC -->
 <div class="jumbotron">
   <h1 id="title">Kevin Tian</h1>
-</div>
-<div class="container">
-  <div class="kevnav" id="header-links">
-  	<ul>
-  	  <a href="#portfolio">portfolio</a>
-  	  <a href="#about-me" id="about-link">about me</a>
-  	  <a href="#contact">contact</a>
-  	</ul>
-  </div>
 </div>
 <br>
 <div class="container">
@@ -116,12 +87,34 @@ $( document ).ready(function() {
     <p class="col-xs-12">Coming soon!</p>
     <br>
   </div>
-<!--   <div class="row">
-    <img class="col-xs-4 zoom" src="media/reflection.jpg" href="/reflection.jpg" alt="road with reflection">
-    <img class="col-xs-4 zoom" src="media/market.jpg" alt="Valdivia fish market">
-    <img class="col-xs-4 zoom" src="media/moss.jpg" alt="moss in sunlight">
+<div class="row">
+    <img class="col-xs-4" src="media/reflection.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
+    <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
+    <div id="myModal1" class="modal">
+    	<div class="modal-content clearfix">
+    		<span class="close" id="close">&times;</span>
+    		<img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
+    		<br><p class="text-center" style="margin:10px;"><b>reflective road</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
+    	</div>     
+    <img class="col-xs-4" src="media/market.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
+    <script> function fishPicFunction() {document.getElementById("myModal2").style.display="block";}</script>
+    <div id="myModal2" class="modal">
+    	<div class="modal-content clearfix">
+    		<span class="close" id="close">&times;</span>
+    		<img class="row modal-image" src="media/market.jpg" alt="sensory overload">
+    		<br><p class="text-center" style="margin:10px;"><b>sensory overload</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
+    	</div>  
+    <img class="col-xs-4" src="media/moss.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
+    <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}
+</script>
+    <div id="myModal3" class="modal">
+    	<div class="modal-content clearfix">
+    		<span class="close" id="close">&times;</span>
+    		<img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
+    		<br><p class="text-center" style="margin:10px;"><b>glistening moss</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
+    	</div> 
     <br>
-  </div> -->
+  </div>
 </div>
 <div class="row" id="about-me"></div>
 <div class="container">
