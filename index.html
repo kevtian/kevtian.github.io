@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kevin Tian</title>
     <link rel="stylesheet" href="kevinstyle.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
   <!-- Latest compiled and minified JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
@@ -28,18 +28,18 @@
 <script>
 $( document ).ready(function() {
   /*loader*/
-  setTimeout(function(){
-        $('body').addClass('loaded')
-    }, 2000);
+  $('body').addClass('loaded');
   /*modal*/
-  var modal1=document.getElementById('myModal1');
+  var modal1=document.getElementsByClassName('myModal');
   var modal2=document.getElementById('myModal2');
   var modal3=document.getElementById('myModal3');
-  $(window).scroll(function() {
-    modal1.style.display="none";
+  $("span#close").click(function() {
+    modal1.style.display="none;";
     modal2.style.display="none";
     modal3.style.display="none";
+  });
 
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var os = $("#about-me").offset().top;
     var ht = $("#about-me").height();
@@ -47,30 +47,47 @@ $( document ).ready(function() {
     {
       if (scroll > os + ht - 100)
         {
-          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#duke-logo").addClass("animated slideInLeft slower");
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
+          $("img#duke-logo").addClass("animated fadeInLeft slower");
         }
-        if (scroll > os + ht - 75) 
+        if (scroll > os + ht - 40) 
         {
-          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#volcano-pic").addClass("animated slideInLeft slower");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
+          $("img#volcano-pic").addClass("animated fadeInLeft slower");
         }
-        if (scroll > os + ht - 50)
+        if (scroll > os + ht + 10)
         {
-          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#getty-pic").addClass("animated slideInLeft");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated fadeInLeft slower");
+          $("img#getty-pic").addClass("animated fadeInLeft");
+        }
+        if (scroll > os + ht + 350)
+        {
+          $("p#in-touch").removeClass("hidden");
+          $("p#in-touch").addClass("animated fadeInLeft slower");
+        }
+        if (scroll > os+ht + 550)
+        {
+          $("img#in-touch-pic").removeClass("hidden");
+          $("img#in-touch-pic").addClass("animated fadeInLeft slower");
         }
     }
     else 
     {
       if (scroll > os + ht - 100)
         {
-          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#duke-logo").addClass("animated slideInLeft slower");
-          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#volcano-pic").addClass("animated slideInLeft slower");
-          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInRight slower");
-          $("img#getty-pic").addClass("animated slideInLeft");
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
+          $("img#duke-logo").addClass("animated fadeInLeft slower");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
+          $("img#volcano-pic").addClass("animated fadeInLeft slower");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
+          $("img#getty-pic").addClass("animated fadeInLeft");
+        }
+        if (scroll > os + ht - 97)
+        {
+          $("p#in-touch").removeClass("hidden");
+          $("img#in-touch-pic").removeClass("hidden");
+          $("p#in-touch").addClass("animated fadeInLeft slower");
+          $("img#in-touch-pic").addClass("animated fadeInLeft slower");
         }
     }
     });
@@ -91,7 +108,6 @@ $( document ).ready(function() {
 <div class="jumbotron">
   <h1 id="title">Kevin Tian</h1>
 </div>
-<br>
 <div class="container">
   <div class="row">
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt logo">
@@ -115,23 +131,26 @@ $( document ).ready(function() {
     <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
     <div id="myModal1" class="modal">
       <div class="modal-content clearfix">
+        <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
-        <br><p class="text-center" style="margin:10px;"><b>reflective road</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]<br><small>scroll to close</small></p></div>
+        <br><p class="text-center" style="margin:10px;"><b>reflective road - </b><a href="media/reflection.jpg" target="_blank">full image</a><br>taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
       </div>     
     <img class="col-xs-4" src="media/market.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
     <script> function fishPicFunction() {document.getElementById("myModal2").style.display="block";}</script>
     <div id="myModal2" class="modal">
       <div class="modal-content clearfix">
+        <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/market.jpg" alt="sensory overload">
-        <br><p class="text-center" style="margin:10px;"><b>sensory overload</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]<br><small>scroll to close</small></p></p></div>
+        <br><p class="text-center" style="margin:10px;"><b>sensory overload - </b><a href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
       </div>  
     <img class="col-xs-4" src="media/moss.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}
 </script>
     <div id="myModal3" class="modal">
       <div class="modal-content clearfix">
+        <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
-        <br><p class="text-center" style="margin:10px;"><b>glistening moss</b><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]<br><small>scroll to close</small></p></p></div>
+        <br><p class="text-center" style="margin:10px;"><b>glistening moss - </b><a href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
       </div> 
     <br>
   </div>
@@ -170,16 +189,21 @@ $( document ).ready(function() {
     <hr>
   </div>
   <div class="row">
-    <p class="col-xs-12">Let's get in touch.<br>Email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
+    <p class="col-xs-12 hidden" id="in-touch">Let's get in touch.<br>Email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
   </div>
   <div class="row">
-    <img class="col-xs-12" src="media/three-steps.svg" alt="three easy steps">
+    <img class="col-xs-12 hidden" src="media/three-steps.svg" alt="three easy steps" id="in-touch-pic">
   </div>
 </div>
 <br>
-<div class="container-fluid" id="footer">
+<div class="container" id="footer">
   <div class="row justify-content-center">
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt logo">
+  </div>
+  <div class="row">
+    <a href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12">github</p></a>
+  </div>
+  <div class="row"><a href="https://www.dropbox.com/s/q9ceuajg0867l0v/Resume.pdf?dl=0" target="_blank"><p class="main-link col-xs-12">resume</p></a>
   </div>
   <div class= "row">
     <p class="col-xs-12"><small>Designed by Kevin Tian &copy; <script type="text/javascript">

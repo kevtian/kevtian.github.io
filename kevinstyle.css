@@ -33,7 +33,7 @@
 	top: 65%;
 	left: 45%;
 	z-index:1500;
-	color: white;
+	color: black;
 }
 
 #loader-wrapper {
@@ -119,7 +119,7 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background: black;
+    background: white;
     z-index: 1000;
 }
  
@@ -147,7 +147,7 @@
 }
 
 .loaded #loading-text{
-	color:black;
+	color:white;
 }
 .loaded #loader-wrapper {
 	visibility: hidden;
@@ -212,8 +212,10 @@ img.opaque {
 .close {
 	color: black;
 	float:right;
-	font-size:25px;
+	font-size:30px;
 	font-weight: bold;
+	border-color: black;
+	border-width: 1px;
 }
 
 .close:hover,.close:focus{
@@ -222,7 +224,20 @@ img.opaque {
 	cursor: pointer;
 }
 
+.main-link {
+	text-decoration: underline;
+	color:black!important;
+	text-align:center!important;
+}
+p.main-link:hover,p.main-link:focus{
+	text-decoration:overline;
+	color:tomato!important;
+}
+
 p.hidden {
+	visibility: hidden;
+}
+img.hidden {
 	visibility: hidden;
 }
 
@@ -250,7 +265,6 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
-	#kt-logo {width: 125px;height: auto;}
 	#header-links{font-size:25px;}
 	#header-titles{font-size:30px;}
 	#loading-text{font-size:30px;}
