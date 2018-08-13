@@ -209,6 +209,11 @@ img.opaque {
 	overflow: auto!important;
 }
 
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
 .close {
 	color: black;
 	float:right;
@@ -239,6 +244,17 @@ p.hidden {
 }
 img.hidden {
 	visibility: hidden;
+}
+
+img.portfolio {
+	position: relative;
+	z-index: 3;
+}
+
+img.portfolio:hover,img.portfolio:focus{
+  cursor: pointer;
+  z-index:1;
+  background: tomato;
 }
 
 .row {
