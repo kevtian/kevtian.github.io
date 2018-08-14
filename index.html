@@ -4,39 +4,51 @@
     <meta charset='utf-8'>
     <meta name="description" content="The personal website of Kevin Tian, a Greenville, SC-native and current Duke undergrad, studying computer science and interested in UI/UX/all-things design.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Tian</title>
+    <title>Kevin Tian Portfolio</title>
+    <!-- favicon stuff -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel='mask-icon' href='icon.svg' color='#ff0000'>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- importing stylesheet and boostrap from CDN -->
     <link rel="stylesheet" href="kevinstyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
-  <script type="application/ld+json">
-    {
-      "@context": "https://kevtian.com",
-      "@type": "Person",
-      "name": "Kevin Tian",
-      "email": "contact@kevtian.com",
-      "hasOccupation": "student",
-      "affiliation": "Duke University",
-    }
-  </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat" rel="stylesheet">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Kevin Tian",
+        "email": "contact@kevtian.com",
+        "hasOccupation": "student",
+        "affiliation": "Duke University",
+      }
+    </script>
   </head>
 
 <script>
 $( document ).ready(function() {
-  /*loader*/
+  /*get rid of loader when window is fully loaded*/
   $(window).on("load",function(){
   $('body').addClass('loaded');
   });
-  /*modal*/
+  /*display the modal*/
   var modal1=document.getElementById('myModal1');
   var modal2=document.getElementById('myModal2');
   var modal3=document.getElementById('myModal3');
   var modal4=document.getElementById('myModal4');
   var modal5=document.getElementById('myModal5');
+  /*close the modals on click*/
   $("span#close").click(function() {
     modal1.style.display="none";
     modal2.style.display="none";
@@ -45,11 +57,12 @@ $( document ).ready(function() {
     modal5.style.display="none";
   });
 
+  /*update JS entrances when window is scrolled*/
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     var os = $("#about-me").offset().top;
     var ht = $("#about-me").height();
-    if ($(window).width() > 768) 
+    if ($(window).width() > 768) /*window mode*/
     {
       if (scroll > os + ht - 100)
         {
@@ -76,8 +89,18 @@ $( document ).ready(function() {
           $("img#in-touch-pic").removeClass("hidden");
           $("img#in-touch-pic").addClass("animated fadeInLeft slower");
         }
+        if (scroll > os+ht + 820)
+        {
+          $("p#github-link").removeClass("hidden");
+          $("p#github-link").addClass("animated fadeInLeft slower");
+        }
+        if (scroll > os+ht + 840)
+        {
+          $("p#resume-link").removeClass("hidden");
+          $("p#resume-link").addClass("animated fadeInLeft slower");
+        }
     }
-    else 
+    else /*mobile mode*/
     {
       if (scroll > os + ht - 100)
         {
@@ -94,6 +117,16 @@ $( document ).ready(function() {
           $("img#in-touch-pic").removeClass("hidden");
           $("p#in-touch").addClass("animated fadeInLeft slower");
           $("img#in-touch-pic").addClass("animated fadeInLeft slower");
+        }
+        if (scroll > os+ht - 96)
+        {
+          $("p#github-link").removeClass("hidden");
+          $("p#github-link").addClass("animated fadeInLeft slower");
+        }
+        if (scroll > os+ht - 95)
+        {
+          $("p#resume-link").removeClass("hidden");
+          $("p#resume-link").addClass("animated fadeInLeft slower");
         }
     }
     });
@@ -119,7 +152,7 @@ $( document ).ready(function() {
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo" onmouseover="this.src='media/colosseum-face.jpg'" onmouseout="this.src='media/kt-logo-circle.svg'">
   </div>
 </div>
-<br>
+<!-- start of portfolio -->
 <div class="container" id="portfolio">
   <div class="row">
     <h3 class="col-xs-12" id="header-titles"><b>portfolio</b></h3>
@@ -132,6 +165,7 @@ $( document ).ready(function() {
     <p class="col-xs-12">photography</p>
     <br>
   </div>
+<!-- portfolio: first row -->
 <div class="row">
     <img class="col-xs-4 portfolio" src="media/reflection-opt.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
     <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
@@ -146,8 +180,8 @@ $( document ).ready(function() {
     <div id="myModal2" class="modal">
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
-        <img class="row modal-image" src="media/market.jpg" alt="sensory overload">
-        <br><p class="text-center" style="margin:10px;"><b>sensory overload - </b><a href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
+        <img class="row modal-image" src="media/market.jpg" alt="Valdivia fish market">
+        <br><p class="text-center" style="margin:10px;"><b>one fish two fish redness - </b><a href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
       </div>  
     <img class="col-xs-4 portfolio" src="media/moss-opt.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}</script>
@@ -164,25 +198,27 @@ $( document ).ready(function() {
     <p class="col-xs-12">websites</p>
     <br>
   </div>
+  <!-- portfolio: second row -->
   <div class="row">
     <img class="col-xs-6 portfolio" src="media/destino-opt.png" alt="Huilo Huilo Destinations" id="destino-pic" onclick="destPicFunction()" style="position: relative!important;">
     <script> function destPicFunction() {document.getElementById("myModal4").style.display="block";}</script>
     <div id="myModal4" class="modal">
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
-        <img class="row modal-image" src="media/destino.png" alt="Huilo Huilo Destinations">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>re-structured a spanish pamphlet of chilean national biological reserve trees for the web, made with tourists from around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo Biological Reserve in Chile</p></div>
+        <img class="row modal-image" src="media/destino-opt.png" alt="Huilo Huilo Destinations">
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and entrepeneurs from Neltume, Chile, and directed the design and creation of a collection of over 10 websites to showcase their handicrafts</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo Biological Reserve in Chile</p></div>
       </div> 
     <img class="col-xs-6 portfolio" src="media/biologia-opt.png" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
      <script> function biolPicFunction() {document.getElementById("myModal5").style.display="block";}</script>
     <div id="myModal5" class="modal">
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
-        <img class="row modal-image" src="media/biologia.png" alt="Huilo Huilo Biosphere">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees in Huilo Huilo - </b><a href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and created a collection of over 10 websites for them</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo National Biological Reserve in Chile</p></div>
+        <img class="row modal-image" src="media/biologia-opt.png" alt="Huilo Huilo Biosphere">
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees - </b><a href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>re-structured an outdated spanish pamphlet of Chilean national biological reserve trees for the web, designed with tourists from all around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo National Biological Reserve in Chile</p></div>
       </div> 
   </div>
 </div>
+<!-- start of about -->
 <div class="row" id="about-me"></div>
 <div class="container">
   <div class="row">
@@ -191,18 +227,21 @@ $( document ).ready(function() {
     <hr>
   </div>
   <br>
+  <!-- about: first row -->
   <div class="row">
     <img class="col-xs-4 about-me-img" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo" onmouseover="this.src='media/duke-logo-hover.jpg'" onmouseout="this.src='media/duke-logo-full.png'">
     <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on design. I'm currently reading: <em>The Design of Everyday Things</em> by Don Norman.</p>
   </div>
   <br>
   <br>
+  <!-- about: second row -->
   <div class="row">
     <img class="col-xs-4 about-me-img" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano" onmouseover="this.src='media/volcano-pic-hover.JPG'" onmouseout="this.src='media/volcano-pic-full.JPG'">
     <p class="col-xs-8 hidden" id="volcano-pic-des">When taking breaks from staring at a computer screen, I love exploring all that nature has to offer. Check out this very cool picture of me from this past summer, standing at the summit of Chile's most active volcano, Villarrica!</p>
   </div>
   <br>
   <br>
+  <!-- about: third row -->
   <div class="row">
     <img class="col-xs-4 about-me-img" id="getty-pic" src="media/getty.jpg" alt="the Getty Center" onmouseover="this.src='media/getty-hover.jpg'" onmouseout="this.src='media/getty.jpg'">
     <p class="col-xs-8 hidden" id="getty-pic-des">In addition to learning about new tech and traveling the world, one of my favorite hobbies is photography. I really enjoy taking pictures with my phone, as evidenced by my portfolio section. </p>
@@ -210,6 +249,7 @@ $( document ).ready(function() {
 </div>
 <br>
 <br>
+<!-- start of contact -->
 <div class="container" id="contact">
   <div class="row">
     <h3 class="col-xs-12" id="header-titles"><b>contact</b></h3>
@@ -217,7 +257,7 @@ $( document ).ready(function() {
     <hr>
   </div>
   <div class="row">
-    <p class="col-xs-12 hidden" id="in-touch">Let's get in touch.<br>Email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
+    <p class="col-xs-12 hidden" id="in-touch">let's get in touch.<br>email me at <em>contact<span style="display:none">obfuscate</span>@kevtian.com</em>.<br></p>
   </div>
   <div class="row">
     <img class="col-xs-12 hidden" src="media/three-steps.svg" alt="three easy steps" id="in-touch-pic">
@@ -229,12 +269,13 @@ $( document ).ready(function() {
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo">
   </div>
   <div class="row">
-    <a href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12">github</p></a>
+    <a href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12 hidden" id="github-link">github</p></a>
   </div>
-  <div class="row"><a href="https://www.dropbox.com/s/q9ceuajg0867l0v/Resume.pdf?dl=0" target="_blank"><p class="main-link col-xs-12">resume</p></a>
+  <div class="row"><a href="https://www.dropbox.com/s/q9ceuajg0867l0v/Resume.pdf?dl=0" target="_blank"><p class="main-link col-xs-12 hidden" id="resume-link">resume</p></a>
   </div>
+  <!-- designed by section -->
   <div class= "row">
-    <p class="col-xs-12"><small>Designed by Kevin Tian &copy; <script type="text/javascript">
+    <p class="col-xs-12"><small>designed by Kevin Tian &copy; <script type="text/javascript">
     var d = new Date()
     document.write(d.getFullYear())
     </script></small></p>
