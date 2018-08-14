@@ -116,7 +116,7 @@ $( document ).ready(function() {
 </div>
 <div class="container">
   <div class="row">
-    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt logo">
+    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo" onmouseover="this.src='media/colosseum-face.jpg'" onmouseout="this.src='media/kt-logo-circle.svg'">
   </div>
 </div>
 <br>
@@ -133,15 +133,15 @@ $( document ).ready(function() {
     <br>
   </div>
 <div class="row">
-    <img class="col-xs-4 portfolio" src="media/reflection.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
+    <img class="col-xs-4 portfolio" src="media/reflection-opt.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
     <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
     <div id="myModal1" class="modal">
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
-        <br><p class="text-center" style="margin:10px;"><b>reflective road - </b><a href="media/reflection.jpg" target="_blank">full image</a><br>taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>path of reflection - </b><a href="media/reflection.jpg" target="_blank">full image</a><br>taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
       </div>     
-    <img class="col-xs-4 portfolio" src="media/market.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
+    <img class="col-xs-4 portfolio" src="media/market-opt.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
     <script> function fishPicFunction() {document.getElementById("myModal2").style.display="block";}</script>
     <div id="myModal2" class="modal">
       <div class="modal-content clearfix">
@@ -149,7 +149,7 @@ $( document ).ready(function() {
         <img class="row modal-image" src="media/market.jpg" alt="sensory overload">
         <br><p class="text-center" style="margin:10px;"><b>sensory overload - </b><a href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
       </div>  
-    <img class="col-xs-4 portfolio" src="media/moss.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
+    <img class="col-xs-4 portfolio" src="media/moss-opt.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}</script>
     <div id="myModal3" class="modal">
       <div class="modal-content clearfix">
@@ -165,7 +165,7 @@ $( document ).ready(function() {
     <br>
   </div>
   <div class="row">
-    <img class="col-xs-6 portfolio" src="media/destino.PNG" alt="Huilo Huilo Destinations" id="destino-pic" onclick="destPicFunction()" style="position: relative!important;">
+    <img class="col-xs-6 portfolio" src="media/destino-opt.PNG" alt="Huilo Huilo Destinations" id="destino-pic" onclick="destPicFunction()" style="position: relative!important;">
     <script> function destPicFunction() {document.getElementById("myModal4").style.display="block";}</script>
     <div id="myModal4" class="modal">
       <div class="modal-content clearfix">
@@ -173,7 +173,7 @@ $( document ).ready(function() {
         <img class="row modal-image" src="media/destino.PNG" alt="Huilo Huilo Destinations">
         <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>re-structured a spanish pamphlet of chilean national biological reserve trees for the web, made with tourists from around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo Biological Reserve in Chile</p></div>
       </div> 
-    <img class="col-xs-6 portfolio" src="media/biologia.PNG" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
+    <img class="col-xs-6 portfolio" src="media/biologia-opt.PNG" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
      <script> function biolPicFunction() {document.getElementById("myModal5").style.display="block";}</script>
     <div id="myModal5" class="modal">
       <div class="modal-content clearfix">
@@ -192,23 +192,28 @@ $( document ).ready(function() {
   </div>
   <br>
   <div class="row">
-    <img class="col-xs-4 about-me-img pointer" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo">
+    <img class="col-xs-4 about-me-img" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo" onmouseover="this.src='media/duke-logo-hover.jpg'" onmouseout="this.src='media/duke-logo-full.png'">
     <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on design. I'm currently reading: <em>The Design of Everyday Things</em> by Don Norman.</p>
   </div>
   <br>
   <br>
   <div class="row">
-    <img class="col-xs-4 about-me-img pointer" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano">
+    <img class="col-xs-4 about-me-img" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano" onmouseover="this.src='media/volcano-pic-hover.JPG'" onmouseout="this.src='media/volcano-pic-full.JPG'">
     <p class="col-xs-8 hidden" id="volcano-pic-des">When taking breaks from staring at a computer screen, I love exploring all that nature has to offer. Check out this very cool picture of me from this past summer, standing at the summit of Chile's most active volcano, Villarrica!</p>
   </div>
   <br>
   <br>
   <div class="row">
-    <img class="col-xs-4 about-me-img pointer" id="getty-pic" src="media/getty.jpg" alt="the Getty Center">
+    <img class="col-xs-4 about-me-img" id="getty-pic" src="media/getty.jpg" alt="the Getty Center" onmouseover="this.src='media/getty-hover.jpg'" onmouseout="this.src='media/getty.jpg'">
     <p class="col-xs-8 hidden" id="getty-pic-des">In addition to learning about new tech and traveling the world, one of my favorite hobbies is photography. I really enjoy taking pictures with my phone, as evidenced by my portfolio section. </p>
   </div>
 </div>
 <br>
+<div>
+<img class="col-xs-12" src="media/volcano-pic-hover.JPG">
+<img class="col-xs-12" src="media/getty-hover.jpg">
+<img class="col-xs-12" src="media/duke-logo-hover.jpg">
+</div>
 <br>
 <div class="container" id="contact">
   <div class="row">
@@ -226,7 +231,7 @@ $( document ).ready(function() {
 <br>
 <div class="container" id="footer">
   <div class="row justify-content-center">
-    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-border.svg" alt="kt logo">
+    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo">
   </div>
   <div class="row">
     <a href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12">github</p></a>

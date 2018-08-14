@@ -26,6 +26,9 @@
 	padding: 0;
 	max-width: 100px;
 	height: auto;
+	border-radius: 50%;
+	border: 2px;
+	border-color: tomato;
 }
 
 #loading-text {
@@ -281,6 +284,7 @@ ul {
 }
 
 @media only screen and (min-width: 768px) {
+	#kt-logo{max-width: 130px!important}
 	#header-links{font-size:25px;}
 	#header-titles{font-size:30px;}
 	#loading-text{font-size:30px;}
