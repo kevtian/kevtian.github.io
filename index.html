@@ -72,78 +72,70 @@ $( document ).ready(function() {
     var scroll = $(window).scrollTop();
     var os = $("#about-me").offset().top;
     var ht = $("#about-me").height();
-    if ($(window).width() > 768) /*window mode*/
+    if ($(window).width() > 768) //window mode
     {
-      if (scroll > os + ht - 100)
+      if (scroll > os + ht - 350)
         {
-          $("p#duke-logo-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
-          $("img#duke-logo").addClass("animated fadeInLeft slower");
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#duke-logo").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os + ht - 40) 
+        if (scroll > os + ht - 190) 
         {
-          $("p#volcano-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
-          $("img#volcano-pic").addClass("animated fadeInLeft slower");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#volcano-pic").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os + ht + 10)
+        if (scroll > os + ht + 38)
         {
-          $("p#getty-pic-des").removeClass("hidden").addClass("animated fadeInLeft slower");
-          $("img#getty-pic").addClass("animated fadeInLeft");
+          $("img#getty-pic").removeClass("hidden").addClass("animated slideInUp slow");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os + ht + 350)
+        if (scroll > os + ht + 345)
         {
-          $("p#in-touch").removeClass("hidden");
-          $("p#in-touch").addClass("animated fadeInLeft slower");
+          $("p#in-touch").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os+ht + 500)
+        if (scroll > os+ht + 397)
         {
-          $("img#in-touch-pic").removeClass("hidden");
-          $("img#in-touch-pic").addClass("animated fadeInLeft slower");
+          $("img#in-touch-pic").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os+ht + 820)
+        if (scroll > os+ht + 735)
         {
-          $("p#github-link").removeClass("hidden");
-          $("p#github-link").addClass("animated fadeInLeft slower");
+          $("p#github-link").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os+ht + 840)
+        if (scroll > os+ht + 773)
         {
-          $("p#resume-link").removeClass("hidden");
-          $("p#resume-link").addClass("animated fadeInLeft slower");
+          $("p#resume-link").removeClass("hidden").addClass("animated slideInUp slow");
         }
     }
-    else /*mobile mode*/
+    else //mobile mode
     {
-      if (scroll > os + ht - 100)
+      if (scroll > os + ht - 550)
         {
-          $("p#duke-logo-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
-          $("img#duke-logo").addClass("animated fadeInLeft slower");
-          $("p#volcano-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
-          $("img#volcano-pic").addClass("animated fadeInLeft slower");
-          $("p#getty-pic-des").removeClass("hidden").addClass("animated fadeInLeft  slower");
-          $("img#getty-pic").addClass("animated fadeInLeft");
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#duke-logo").removeClass("hidden").addClass("animated slideInUp slow");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#volcano-pic").removeClass("hidden").addClass("animated slideInUp slow");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#getty-pic").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os + ht - 97)
+        if (scroll > os + ht + 20)
         {
-          $("p#in-touch").removeClass("hidden");
-          $("img#in-touch-pic").removeClass("hidden");
-          $("p#in-touch").addClass("animated fadeInLeft slower");
-          $("img#in-touch-pic").addClass("animated fadeInLeft slower");
+          $("p#in-touch").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#in-touch-pic").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os+ht - 96)
+        if (scroll > os+ht + 200)
         {
-          $("p#github-link").removeClass("hidden");
-          $("p#github-link").addClass("animated fadeInLeft slower");
+          $("p#github-link").removeClass("hidden").addClass("animated slideInUp slow");
         }
-        if (scroll > os+ht - 95)
+        if (scroll > os+ht + 220)
         {
-          $("p#resume-link").removeClass("hidden");
-          $("p#resume-link").addClass("animated fadeInLeft slower");
+          $("p#resume-link").removeClass("hidden").addClass("animated slideInUp slow");
         }
     }
     });
 });
 </script>
 
-<body>
+<body style="background: #fdfdfd!important;">
 <!-- PRELOADER -->
 <div>
   <div id="loader-wrapper">
@@ -155,7 +147,7 @@ $( document ).ready(function() {
 </div>
 <!-- HEAD OF DOC -->
 <div class="jumbotron">
-  <h1 id="title">Kevin Tian</h1>
+  <h1 id="title" style="color: #fdfdfd!important;">Kevin Tian</h1>
 </div>
 <div class="container">
   <div class="row">
@@ -183,7 +175,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/reflection.jpg" alt="path of reflection">
-        <br><p class="text-center" style="margin:10px;"><b>path of reflection - </b><a href="media/reflection.jpg" target="_blank">full image</a><br>taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>path of reflection - </b><a class="main-link" href="media/reflection.jpg" target="_blank">full image</a><br>taken on Google Pixel 2<br>[f/1.8]  [1/642]  [4.44mm]  [ISO51]</p></div>
       </div>     
     <img class="col-xs-4 portfolio" src="media/market-opt.jpg" alt="Valdivia fish market" id="fishmarket-pic" onclick="fishPicFunction()">
     <script> function fishPicFunction() {document.getElementById("myModal2").style.display="block";}</script>
@@ -191,7 +183,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/market.jpg" alt="Valdivia fish market">
-        <br><p class="text-center" style="margin:10px;"><b>one fish two fish redness - </b><a href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>one fish two fish redness - </b><a class="main-link" href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
       </div>  
     <img class="col-xs-4 portfolio" src="media/moss-opt.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}</script>
@@ -199,7 +191,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
-        <br><p class="text-center" style="margin:10px;"><b>glistening moss - </b><a href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>glistening moss - </b><a class="main-link" href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
       </div> 
     <br>
   </div>
@@ -216,7 +208,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/destino-opt.png" alt="Huilo Huilo Destinations">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and entrepeneurs from Neltume, Chile, and directed the design and creation of a collection of over 10 websites to showcase their handicrafts</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo Biological Reserve in Chile</p></div>
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a class="main-link" href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and entrepeneurs from Neltume, Chile, and directed the design and creation of a collection of over 10 websites to showcase their handicrafts</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo Biological Reserve in Chile</p></div>
       </div> 
     <img class="col-xs-6 portfolio" src="media/biologia-opt.png" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
      <script> function biolPicFunction() {document.getElementById("myModal5").style.display="block";}</script>
@@ -224,7 +216,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/biologia-opt.png" alt="Huilo Huilo Biosphere">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees - </b><a href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>re-structured an outdated spanish pamphlet of Chilean national biological reserve trees for the web, designed with tourists from all around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo National Biological Reserve in Chile</p></div>
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees - </b><a class="main-link" href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>re-structured an outdated spanish pamphlet of Chilean national biological reserve trees for the web, designed with tourists from all around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo National Biological Reserve in Chile</p></div>
       </div> 
   </div>
 </div>
@@ -239,21 +231,21 @@ $( document ).ready(function() {
   <br>
   <!-- about: first row -->
   <div class="row">
-    <img class="col-xs-4 about-me-img" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo" onmouseover="this.src='media/duke-logo-hover.jpg'" onmouseout="this.src='media/duke-logo-full.png'">
+    <img class="col-xs-4 about-me-img hidden" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo" onmouseover="this.src='media/duke-logo-hover.jpg'" onmouseout="this.src='media/duke-logo-full.png'">
     <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on design. I'm currently reading: <em>The Design of Everyday Things</em> by Don Norman.</p>
   </div>
   <br>
   <br>
   <!-- about: second row -->
   <div class="row">
-    <img class="col-xs-4 about-me-img" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano" onmouseover="this.src='media/volcano-pic-hover.JPG'" onmouseout="this.src='media/volcano-pic-full.JPG'">
+    <img class="col-xs-4 about-me-img hidden" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano" onmouseover="this.src='media/volcano-pic-hover.JPG'" onmouseout="this.src='media/volcano-pic-full.JPG'">
     <p class="col-xs-8 hidden" id="volcano-pic-des">When taking breaks from staring at a computer screen, I love exploring all that nature has to offer. Check out this very cool picture of me from this past summer, standing at the summit of Chile's most active volcano, Villarrica!</p>
   </div>
   <br>
   <br>
   <!-- about: third row -->
   <div class="row">
-    <img class="col-xs-4 about-me-img" id="getty-pic" src="media/getty.jpg" alt="the Getty Center" onmouseover="this.src='media/getty-hover.jpg'" onmouseout="this.src='media/getty.jpg'">
+    <img class="col-xs-4 about-me-img hidden" id="getty-pic" src="media/getty.jpg" alt="the Getty Center" onmouseover="this.src='media/getty-hover.jpg'" onmouseout="this.src='media/getty.jpg'">
     <p class="col-xs-8 hidden" id="getty-pic-des">In addition to learning about new tech and traveling the world, one of my favorite hobbies is photography. I really enjoy taking pictures with my phone, as evidenced by my portfolio section. </p>
   </div>
 </div>
@@ -275,9 +267,6 @@ $( document ).ready(function() {
 </div>
 <br>
 <div class="container" id="footer">
-  <div class="row justify-content-center">
-    <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo">
-  </div>
   <div class="row">
     <a href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12 hidden" id="github-link">github</p></a>
   </div>
