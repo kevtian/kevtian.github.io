@@ -151,7 +151,9 @@ $( document ).ready(function() {
 </div>
 <div class="container">
   <div class="row">
+    <a style="margin-left: auto;" href="https://www.github.com/kevtian" target="_blank"><p class="main-link col-xs-12" id="top-link">github</p></a>
     <img class="col-xs-12" id="kt-logo" src="media/kt-logo-circle.svg" alt="kt logo" onmouseover="this.src='media/colosseum-face.jpg'" onmouseout="this.src='media/kt-logo-circle.svg'">
+    <a style="margin-right: auto;" href="https://www.dropbox.com/s/q9ceuajg0867l0v/Resume.pdf?dl=0" target="_blank"><p class="main-link col-xs-12" id="top-link">resume</p></a>
   </div>
 </div>
 <!-- start of portfolio -->
@@ -161,14 +163,36 @@ $( document ).ready(function() {
     <br>
     <hr>
   </div>
-</div>
-<div class="container" id="portfolio">
   <div class="row">
-    <p class="col-xs-12">photography</p>
+    <p class="col-xs-12"><b>websites</b><br><small>budding designer, showcasing some of my digital work with the Drupal CMS</small></p>
     <br>
   </div>
-<!-- portfolio: first row -->
-<div class="row">
+  <!-- portfolio: first row -->
+  <div class="row">
+    <img class="col-xs-6 portfolio" src="media/destino-opt.png" alt="Huilo Huilo Destinations" id="destino-pic" onclick="destPicFunction()" style="position: relative!important;">
+    <script> function destPicFunction() {document.getElementById("myModal4").style.display="block";}</script>
+    <div id="myModal4" class="modal">
+      <div class="modal-content clearfix">
+        <span class="close" id="close">x</span>
+        <img class="row modal-image" src="media/destino-opt.png" alt="Huilo Huilo Destinations">
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a class="main-link" href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and entrepeneurs from Neltume, Chile, and directed the design and creation of a collection of over 10 websites to showcase their handicrafts</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo Biological Reserve in Chile</p></div>
+      </div> 
+    <img class="col-xs-6 portfolio" src="media/biologia-opt.png" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
+     <script> function biolPicFunction() {document.getElementById("myModal5").style.display="block";}</script>
+    <div id="myModal5" class="modal">
+      <div class="modal-content clearfix">
+        <span class="close" id="close">x</span>
+        <img class="row modal-image" src="media/biologia-opt.png" alt="Huilo Huilo Biosphere">
+        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees - </b><a class="main-link" href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>re-structured an outdated spanish pamphlet of Chilean national biological reserve trees for the web, designed with tourists from all around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo National Biological Reserve in Chile</p></div>
+      </div> 
+  </div>
+  <br>
+  <div class="row">
+    <p class="col-xs-12"><b>photography</b><br><small>aspiring photographer, aiming to capture unsung beauty in my free time</small></p>
+    <br>
+  </div>
+<!-- portfolio: second row -->
+  <div class="row">
     <img class="col-xs-4 portfolio" src="media/reflection-opt.jpg" alt="path of reflection" id="reflection-pic" onclick="refPicFunction()">
     <script> function refPicFunction() {document.getElementById("myModal1").style.display="block";}</script>
     <div id="myModal1" class="modal">
@@ -192,32 +216,7 @@ $( document ).ready(function() {
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
         <br><p class="text-center" style="margin:10px;"><b>glistening moss - </b><a class="main-link" href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
-      </div> 
-    <br>
-  </div>
-  <br>
-  <div class="row">
-    <p class="col-xs-12">websites</p>
-    <br>
-  </div>
-  <!-- portfolio: second row -->
-  <div class="row">
-    <img class="col-xs-6 portfolio" src="media/destino-opt.png" alt="Huilo Huilo Destinations" id="destino-pic" onclick="destPicFunction()" style="position: relative!important;">
-    <script> function destPicFunction() {document.getElementById("myModal4").style.display="block";}</script>
-    <div id="myModal4" class="modal">
-      <div class="modal-content clearfix">
-        <span class="close" id="close">x</span>
-        <img class="row modal-image" src="media/destino-opt.png" alt="Huilo Huilo Destinations">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Destino Huilo Huilo - </b><a class="main-link" href="https://destino.huilohuilo.travel/home" target="_blank">check it out</a><br>documented the incredible work of over 15 local <em>artesanas</em> and entrepeneurs from Neltume, Chile, and directed the design and creation of a collection of over 10 websites to showcase their handicrafts</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued admiration, for the Huilo Huilo Biological Reserve in Chile</p></div>
-      </div> 
-    <img class="col-xs-6 portfolio" src="media/biologia-opt.png" alt="Huilo Huilo Flora" id="biologia-pic" onclick="biolPicFunction()" style="position: relative!important;">
-     <script> function biolPicFunction() {document.getElementById("myModal5").style.display="block";}</script>
-    <div id="myModal5" class="modal">
-      <div class="modal-content clearfix">
-        <span class="close" id="close">x</span>
-        <img class="row modal-image" src="media/biologia-opt.png" alt="Huilo Huilo Biosphere">
-        <br><p class="text-center" style="margin:10px;font-size:18px;"><b>Native Trees - </b><a class="main-link" href="https://biologia.huilohuilo.travel" target="_blank">check it out</a><br>re-structured an outdated spanish pamphlet of Chilean national biological reserve trees for the web, designed with tourists from all around the world in mind</p><hr><p class="text-center" style="margin:10px;font-size:15px;">built in 2018 with Drupal CMS<br>with continued curiosity, for the Huilo Huilo National Biological Reserve in Chile</p></div>
-      </div> 
+    </div> 
   </div>
 </div>
 <!-- start of about -->
@@ -232,7 +231,7 @@ $( document ).ready(function() {
   <!-- about: first row -->
   <div class="row">
     <img class="col-xs-4 about-me-img hidden" id="duke-logo" src="media/duke-logo-full.png" alt="Duke logo" onmouseover="this.src='media/duke-logo-hover.jpg'" onmouseout="this.src='media/duke-logo-full.png'">
-    <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on design. I'm currently reading: <em>The Design of Everyday Things</em> by Don Norman.</p>
+    <p class="col-xs-8 hidden" id="duke-logo-des">I'm currently a sophomore at Duke University pursuing a B.S. in Computer Science. My focus in and out of the classroom is on design. I'm currently reading: <i>The Design of Everyday Things</i> by Don Norman.</p>
   </div>
   <br>
   <br>
