@@ -7,7 +7,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-124070068-1');
     </script>
 
@@ -72,7 +71,33 @@ $( document ).ready(function() {
     var scroll = $(window).scrollTop();
     var os = $("#about-me").offset().top;
     var ht = $("#about-me").height();
-    if ($(window).width() > 768) //window mode
+    if ($(window).width() > 1500) //window mode for desktop displays
+    {
+        if (scroll > os + ht - 1000)
+        {
+          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#duke-logo").removeClass("hidden").addClass("animated slideInUp slow");
+          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#volcano-pic").removeClass("hidden").addClass("animated slideInUp slow");
+          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#getty-pic").removeClass("hidden").addClass("animated slideInUp slow");
+        }
+        if (scroll > os + ht)
+        {
+          $("p#in-touch").removeClass("hidden").addClass("animated slideInUp slow");
+          $("img#in-touch-pic").removeClass("hidden").addClass("animated slideInUp slow");
+        }
+        if (scroll > os+ht + 370)
+        {
+          $("p#github-link").removeClass("hidden").addClass("animated slideInUp slow");
+        }
+        if (scroll > os+ht + 395)
+        {
+          $("p#resume-link").removeClass("hidden").addClass("animated slideInUp slow");
+        }
+
+    }
+    else if ($(window).width() > 768) //window mode for laptops
     {
       if (scroll > os + ht - 350)
         {
@@ -164,7 +189,7 @@ $( document ).ready(function() {
     <hr>
   </div>
   <div class="row">
-    <p class="col-xs-12"><b>websites</b><br><small>budding designer, showcasing some of my digital work with the Drupal CMS</small></p>
+    <p class="col-xs-12"><b>websites</b><br><small>a selection of some of my digital work with the Drupal CMS</small></p>
     <br>
   </div>
   <!-- portfolio: first row -->
@@ -188,7 +213,7 @@ $( document ).ready(function() {
   </div>
   <br>
   <div class="row">
-    <p class="col-xs-12"><b>photography</b><br><small>aspiring photographer, aiming to capture unsung beauty in my free time</small></p>
+    <p class="col-xs-12"><b>photography</b><br><small>a few simple and engaging shots</small></p>
     <br>
   </div>
 <!-- portfolio: second row -->
@@ -207,7 +232,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/market.jpg" alt="Valdivia fish market">
-        <br><p class="text-center" style="margin:10px;"><b>one fish two fish redness - </b><a class="main-link" href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>deep reds - </b><a class="main-link" href="media/market.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/437]  [4.44mm]  [ISO50]</p></div>
       </div>  
     <img class="col-xs-4 portfolio" src="media/moss-opt.jpg" alt="moss in sunlight" id="moss-pic" onclick="mossPicFunction()">
     <script> function mossPicFunction() {document.getElementById("myModal3").style.display="block";}</script>
@@ -215,7 +240,7 @@ $( document ).ready(function() {
       <div class="modal-content clearfix">
         <span class="close" id="close">x</span>
         <img class="row modal-image" src="media/moss.jpg" alt="glistening moss">
-        <br><p class="text-center" style="margin:10px;"><b>glistening moss - </b><a class="main-link" href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
+        <br><p class="text-center" style="margin:10px;"><b>greens - </b><a class="main-link" href="media/moss.jpg" target="_blank">full image</a><br> taken on Google Pixel 2<br>[f/1.8]  [1/3344]  [4.44mm]  [ISO50]</p></div>
     </div> 
   </div>
 </div>
@@ -238,14 +263,14 @@ $( document ).ready(function() {
   <!-- about: second row -->
   <div class="row">
     <img class="col-xs-4 about-me-img hidden" id="volcano-pic" src="media/volcano-pic-full.JPG" alt="Kevin on a volcano" onmouseover="this.src='media/volcano-pic-hover.JPG'" onmouseout="this.src='media/volcano-pic-full.JPG'">
-    <p class="col-xs-8 hidden" id="volcano-pic-des">When taking breaks from staring at a computer screen, I love exploring all that nature has to offer. Check out this very cool picture of me from this past summer, standing at the summit of Chile's most active volcano, Villarrica!</p>
+    <p class="col-xs-8 hidden" id="volcano-pic-des">When taking breaks from staring at a computer screen, I love exploring all that nature has to offer. To the left is a picture of me from this past summer, standing at the summit of Chile's most active volcano, Villarrica.</p>
   </div>
   <br>
   <br>
   <!-- about: third row -->
   <div class="row">
     <img class="col-xs-4 about-me-img hidden" id="getty-pic" src="media/getty.jpg" alt="the Getty Center" onmouseover="this.src='media/getty-hover.jpg'" onmouseout="this.src='media/getty.jpg'">
-    <p class="col-xs-8 hidden" id="getty-pic-des">In addition to learning about new tech and traveling the world, one of my favorite hobbies is photography. I really enjoy taking pictures with my phone, as evidenced by my portfolio section. </p>
+    <p class="col-xs-8 hidden" id="getty-pic-des">In addition to learning about new tech and traveling the world, one of my favorite hobbies is photography.</p>
   </div>
 </div>
 <br>
