@@ -87,37 +87,16 @@ $( document ).ready(function() {
     var ht = $("#about-me").height();
     if ($(window).width() > 768) //window mode for laptops
     {
-      if (scroll > os + ht - 350)
-        {
-          $("p#duke-logo-des").removeClass("hidden").addClass("animated slideInUp slow");
-          $("img#duke-logo").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os + ht - 190) 
-        {
-          $("p#volcano-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
-          $("img#volcano-pic").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os + ht + 38)
-        {
-          $("img#getty-pic").removeClass("hidden").addClass("animated slideInUp slow");
-          $("p#getty-pic-des").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os + ht + 345)
-        {
-          $("p#in-touch").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os+ht + 397)
-        {
-          $("img#in-touch-pic").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os+ht + 735)
-        {
-          $("p#github-link").removeClass("hidden").addClass("animated slideInUp slow");
-        }
-        if (scroll > os+ht + 773)
-        {
-          $("p#resume-link").removeClass("hidden").addClass("animated slideInUp slow");
-        }
+      $("p#duke-logo-des").removeClass("hidden");
+      $("img#duke-logo").removeClass("hidden");
+      $("p#volcano-pic-des").removeClass("hidden");
+      $("img#volcano-pic").removeClass("hidden");
+      $("img#getty-pic").removeClass("hidden");
+      $("p#getty-pic-des").removeClass("hidden");
+      $("p#in-touch").removeClass("hidden");
+      $("img#in-touch-pic").removeClass("hidden");
+      $("p#github-link").removeClass("hidden");
+      $("p#resume-link").removeClass("hidden");
     }
     else //mobile mode
     {
