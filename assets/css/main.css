@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400italic");
+@import url("https://fonts.googleapis.com/css?family=Niramit,Montserrat:400,400italic");
 
 /*
 	Strata by HTML5 UP
@@ -98,7 +98,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #303030;
-		font-family: "Montserrat", sans-serif;
+		font-family: "", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -133,6 +133,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
+		font-family: "Niramit";
 		color: #303030;
 		font-weight: 400;
 		line-height: 1em;
