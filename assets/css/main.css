@@ -2625,7 +2625,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer .icons {
-		margin: 1em 0 0 0;
+		margin: 1.5em 0 0 0;
 	}
 
 		#footer .icons a {
@@ -2633,10 +2633,10 @@ input, select, textarea {
 		}
 
 	#footer .copyright {
-		color: rgba(255, 255, 255, 0.4);
+		color: rgba(255, 255, 255, 0.5);
 		font-size: 0.8em;
 		list-style: none;
-		margin: 1em 0 0 0;
+		margin: 1.5em 0 0 0;
 		padding: 0;
 	}
 
@@ -2663,14 +2663,14 @@ input, select, textarea {
 	#main {
 		margin-left: 35%;
 		max-width: 54em;
-		padding: 8em 4em 4em 4em;
-		width: calc(100% - 35%);
+		padding: 4em 4em 4em 4em;
+		width: calc(100% - 30%);
 	}
 
 		#main > section {
 			border-top: solid 2px #efefef;
-			margin: 4em 0 0 0;
-			padding: 4em 0 0 0;
+			margin: 3em 0 0 0;
+			padding: 3em 0 0 0;
 		}
 
 			#main > section:first-child {
@@ -2964,7 +2964,7 @@ input, select, textarea {
 		/* Header */
 
 			#header {
-				padding: 6em 3em 3em 3em;
+				padding: 3em 3em 3em 3em;
 				width: 30%;
 			}
 
@@ -2995,7 +2995,7 @@ input, select, textarea {
 			#main {
 				margin-left: 30%;
 				max-width: none;
-				padding: 6em 3em 3em 3em;
+				padding: 4em 3em 3em 3em;
 				width: calc(100% - 30%);
 			}
 
@@ -3024,7 +3024,7 @@ input, select, textarea {
 				background-position: top left, center center;
 				background-size: auto,		cover;
 				left: auto;
-				padding: 6em 4em;
+				padding: 4em 4em;
 				position: relative;
 				text-align: center;
 				top: auto;
