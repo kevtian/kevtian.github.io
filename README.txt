@@ -1,4 +1,4 @@
-Personal website for Kevin Tian, designed by Kevin Tian.
+Personal website designed by Kevin, for Kevin.
 
 Website theme:
 Strata by HTML5 UP
