@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Niramit,Montserrat:400,400italic");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Nunito&display=swap');
 
 /*
 	Strata by HTML5 UP
@@ -98,7 +98,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #303030;
-		font-family: "Montserrat", sans-serif;
+		font-family: "Nunito", sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
 		line-height: 1.75em;
@@ -129,12 +129,12 @@ input, select, textarea {
 	}
 
 	p {
-		font-family: "Montserrat";
+		font-family: "Nunito";
 		margin: 0 0 2em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-family: "Niramit";
+		font-family: "Montserrat";
 		color: #303030;
 		font-weight: 400;
 		line-height: 1em;
