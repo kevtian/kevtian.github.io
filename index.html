@@ -88,19 +88,26 @@
 						<p>Start the conversation with the form below, and I'll keep the ball rolling!</p>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="https://formspree.io/kevin.tian@duke.edu">
+								<form method="POST" action="https://formspree.io/kevin.tian@duke.edu">
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Your name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Your million dollar idea" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall">
+											<input type="text" name="name" id="name" placeholder="Your name" />
+										</div>
+										<div class="col-6 col-12-xsmall">
+											<input type="email" name="email" id="email" placeholder="Your email" />
+										</div>
+										<div class="col-12">
+											<textarea name="message" id="message" placeholder="Your million dollar idea" rows="4"></textarea>
+										</div>
 										<div class="field">
-											<inppe="text" name="_gotcha" style="display:none" />ut ty
+											<input type="text" name="_gotcha" style="display:none">
 										</div>
 									</div>
-								</form>
-								<ul class="actions">
-									<li><input type="submit" value="Send to Kevin" /></li>
+									<li>
+										<input type="submit" value="Send to Kevin" />
+									</li>
 								</ul>
+								</form>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
