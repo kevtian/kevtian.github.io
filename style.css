@@ -185,17 +185,17 @@ a.links {
 	}
 
 	#work-bubble {
-		-webkit-filter: blur(1px);
-		filter: blur(1px);
-		-webkit-transition: .15s ease-in-out;
-		transition: .15s ease-in-out;
-		box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
+		-webkit-filter: none;
+		filter: none;
+		-webkit-transition: none;
+		transition: none;
+		box-shadow: none; 
 		width: 35%; 
 		height: auto;
 	}
 
 	#work-bubble:hover {
-		-webkit-filter: blur(0);
-		filter: blur(0);
+		-webkit-filter: none;
+		filter: none;
 	}
 }
