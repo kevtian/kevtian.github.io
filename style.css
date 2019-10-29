@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+body {
+	color: #FFFFFF;
+}
+
+p, a {
+	font-family: 'Nunito', sans-serif;
+	color: #FFFFFF;
+	font-size: 28px;
+	font-weight: 300;
+}
+
+h2 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 48px;
+	font-weight: 300;
+}
+
+h3 {
+	font-family: 'Nunito', sans-serif;
+	font-size: 34px;
+	font-weight: 300;
+}
+
+.container {
+	display: inline;
+}
+
+.home {
+	width: 70%;
+	margin: 8% auto 0 auto;
+}
+
+#index .home {
+	margin: 8% auto 3% auto;
+}
+
+.menu {
+	width: 95%;
+	display: inline-flex;
+	justify-content: space-between;
+}
+
+.footer .container .menu {
+	justify-content: center;
+	padding-bottom: 25px;
+}
+
+#footer-index.menu {
+	padding-top: 25px;
+	padding-bottom: 0px;
+}
+
+#headshot {
+	border: 9px solid #FFFFFF;
+	box-sizing: border-box; 
+	box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
+	width: 50%;
+	margin: auto;
+	-ms-transform: rotate(90deg); /* IE 9 */
+	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+	transform: rotate(90deg);
+}
+
+#bio {
+	overflow: auto;
+	width: 100%;
+}
+
+#about {
+	display: flex;
+	margin: 3% auto 6% auto;
+}
+
+a.logo {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 300;
+	display: inline-flex;
+	text-decoration: none !important;
+	margin: 40px 0px 0px 38px;
+}
+
+a.links {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	display: inline-flex;
+	align-self: flex-end;
+	text-decoration:  none !important;
+	margin: 50px 0px 0px 30px;
+}
+
+#work-bubble {
+	-webkit-filter: blur(1px);
+	filter: blur(1px);
+	-webkit-transition: .15s ease-in-out;
+	transition: .15s ease-in-out;
+	box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
+	width: 35%; 
+	height: auto;
+}
+
+#work-bubble:hover {
+	-webkit-filter: blur(0);
+	filter: blur(0);
+}
