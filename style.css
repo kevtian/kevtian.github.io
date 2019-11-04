@@ -12,6 +12,11 @@ p, a {
 	font-weight: 300;
 }
 
+a:hover {
+	color: lightcoral;
+	text-decoration: none;
+}
+
 h2 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 48px;
@@ -22,6 +27,13 @@ h3 {
 	font-family: 'Nunito', sans-serif;
 	font-size: 34px;
 	font-weight: 300;
+}
+
+figcaption {
+	font-family: 'Nunito', sans-serif;
+	font-size: 24px;
+	font-weight: 300;
+	text-align: center;
 }
 
 .container {
@@ -94,8 +106,8 @@ a.links {
 }
 
 #work-bubble {
-	-webkit-filter: blur(1px);
-	filter: blur(1px);
+	-webkit-filter: blur(2px);
+	filter: blur(2px);
 	-webkit-transition: .15s ease-in-out;
 	transition: .15s ease-in-out;
 	box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
@@ -125,6 +137,12 @@ a.links {
 	h3 {
 		font-family: 'Nunito', sans-serif;
 		font-size: 20px;
+		font-weight: 300;
+	}
+
+	figcaption{
+		font-family: 'Nunito', sans-serif;
+		font-size: 14px;
 		font-weight: 300;
 	}
 
@@ -185,17 +203,17 @@ a.links {
 	}
 
 	#work-bubble {
-		-webkit-filter: none;
-		filter: none;
-		-webkit-transition: none;
-		transition: none;
-		box-shadow: none; 
-		width: 35%; 
+		-webkit-filter: blur(0px);
+		filter: blur(0px);
+		-webkit-transition: 0s ease-in-out;
+		transition: 0s ease-in-out;
+		box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
+		width: 60%; 
 		height: auto;
 	}
 
 	#work-bubble:hover {
-		-webkit-filter: none;
-		filter: none;
+		-webkit-filter: blur(0);
+		filter: blur(0);
 	}
 }
