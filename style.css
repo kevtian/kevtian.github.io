@@ -66,19 +66,20 @@ figcaption {
 }
 
 #headshot {
-	border: 9px solid #FFFFFF;
+	border: 8px solid #FFFFFF;
 	box-sizing: border-box; 
 	box-shadow: 10px 15px 35px rgba(0,0,0,.4); 
-	width: 50%;
-	margin: auto;
-	-ms-transform: rotate(90deg); /* IE 9 */
-	-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-	transform: rotate(90deg);
+	width: 35%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5em;
+	margin-bottom: auto;
 }
 
 #bio {
 	overflow: auto;
 	width: 100%;
+	margin-left: 10%;
 }
 
 #about {
@@ -166,16 +167,17 @@ a.links {
 	#headshot {
 		border: none; 
 		box-shadow: none; 
-		width: 50%;
-		margin: auto;
-		-ms-transform: rotate(90deg); /* IE 9 */
-		-webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
-		transform: rotate(90deg);
+		width: 30%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1em;
+		margin-bottom: auto;
 	}
 
 	#bio {
 		overflow: auto;
 		width: 100%;
+		margin-left: 10px;
 	}
 
 	#about {
