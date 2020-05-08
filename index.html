@@ -1,12 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="en-US" style="background-color: #0E3964; transform: translate3d(0, 0, 0);">
+<html lang="en-US" style="background-color: #182634;">
     <head>
-        <title>Kevin Tian</title>
+        <title>Kevin Tian | Product Designer</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <meta name="keywords" content="Kevin, Tian, Kevin Tian, design, user experience, Duke, product">
-        <meta name="description" content="product designer and user experience researcher, currently studying computer science and psychology at Duke University">
+        <meta name="description" content="Product and UX designer, currently studying computer science and psychology at Duke University">
         <meta name="author" content="Kevin Tian">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="images/kt-logo.ico">
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124070068-1"></script>
@@ -14,8 +15,15 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'UA-124070068-1');
-        </script>
+            gtag('config', 'UA-124070068-1'); </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"> </script>
+		<script>
+		  WebFont.load({
+		    google: {
+		      families: ['Nunito:400,600']
+		    }
+		  }); </script>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
@@ -28,39 +36,66 @@
                 "https://linkedin.com/in/kev-in",
                 "https://medium.com/@kevintian"
                 ]
-            }
-        </script>
+            } </script>
     </head>
 
-    <body>
-        <!-- Top nav bar -->
-        <div class='container'>
-            <div class='menu' id='header'>
-                <div>
-                    <a class='logo' href='index.html'>Kevin Tian</a>
-                </div>
-                <div>
-                    <a class= 'links' href='work.html'>Work</a>
-                    <a class= 'links' href='about.html'>About</a>
-                    <a class= 'links' href='assets/Resume_Kevin_Tian.pdf'>Resume</a>
-                </div>
-            </div>
-        </div>
+	<body>
+		<!-- top links -->
+		<div class="container header">
+			<div class="row cols-12 adj-gutters">
+				<div class="col-lg-1 offset-lg-9 col-md-1 offset-md-9">
+					<a class= 'links header-links' href='https://www.linkedin.com/in/kev-in'>LINKEDIN</a>
+				</div>
+				<div class="col-lg-1 offset-lg-0 col-md-1">
+					<a class= 'links header-links' href='assets/Resume_Kevin_Tian.pdf'>RESUME</a>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row cols-12 adj-gutters">
+				<div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-4">
+					<img id='headshot' src="images/headshot-min.png" alt="Kevin Tian picture">
+				</div>
+				<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1">
+					<h3>Hi, I'm Kevin Tian</h3>
+					<p>I’m a user experience and product designer with technical background. I love solving complex and meaningful problems. My previous experiences reflect my passion for projects that empower underserved users. They also highlight my ability to collaborate, design, and build past unique social, economic, and technological constraints.</p>
+					<p>The most beautiful design is:</p>
+					<div class="row no-gutters align-items-start">
+						<div class="col-lg-3 col-md-3 col-sm-12">
+							<h6 id="design-text">honest.</h6>
+							<p id="star">✨</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<p>Empowers the user and makes their life easier, doesn't mislead or decieve.</p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12">
+							<h6 id="design-text">minimal.</h6>
+							<p id="star">✨</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<p>Captures all the essentials and hides the rest. A simple yet delightful experience.</p>
+						</div>
 
-        <!-- Content page -->
-        <div class='home'>
-            <p>I’m passionate about solving problems to empower underserved users. My best work takes place when I’m collaborating and designing past unique social and technological constraints.</p>
-            <p>Previously, I worked as a Design Technologist on interaction design and design system at <a href="https://juvo.com">Juvo</a>. Before that, I did website and content management with the <a href="https://sites.duke.edu/centerforaging/">Duke Center for the Study of Aging</a>, and front-end web dev at the <a href="https://huilohuilo.com/en/">Huilo Huilo Foundation</a>.</p>
-        </div>
-    </body>
+						<div class="col-lg-3 col-md-3 col-sm-5">
+							<h6 id="design-text">thorough.</h6>
+							<p id="star">✨</p>
+						</div>
+						<div class="col-lg-9 col-md-9 col-sm-12">
+							<p>Designed with the user—not just for the user—in a process that can’t be rushed.</p>
+						</div>
+					</div>
+					<p id="previously" style="margin-top: 70px; font-style: italic; color: rgba(255, 255, 255, 0.5);">- previously</p>
+					<h6>Design Technologist Intern @ <a href='https://www.juvo.com'>Juvo</a></h6>
+					<p>I led an interaction design investigation of the checkout user flow in JuvoUP, the primary Juvo app offering deployed to multiple mobile network operators. I contributed peer-reviewed Swift code into the root app for future deployments. Finally, I recorded all of my design findings and authored documentation in the Juvo Design System under the <a href="https://zeroheight.com/6wao89e8m/p/810163-motion/b/7595cb">Motion tab</a>.</p>
+					<p><a href="mailto:contact@kevtian.com?subject=Hey Kevin!">Email me</a> if you’d like to hear more.</p>
+					<p style="font-style: italic; color: rgba(255, 255, 255, 0.5);">- in my free time</p>
+					<p>I enjoy writing design case studies on apps that I find relevant or personally meaningful on Medium.</p>
+					<p>As an undergraduate student at Duke University, I keep myself busy — exploring design principles with the <a href="https://www.hackduke.org">HackDuke Design team</a>; learning traditional and modern-style dance with <a href="https://www.dukechinesedance.com">Duke Chinese Dance</a>; stressing the importance of early STEM education exposure by mentoring middle schoolers with <a href="http://www.sites.duke.edu/innoworks/our-story">Duke Innoworks</a>; and playing tennis with the Club Tennis team.</p>
+					<p>I love reading science fiction on planes and rainy days, going on long hikes (not on rainy days), and discovering new music to blast with friends.</p>
+					<p id="from-scratch">Built from scratch with 💙</p>
+				</div>
+			</div>
+		</div>
+	</body>
 
-    <!-- Footer -->
-    <div class = "footer">
-        <div class='container'>
-            <div class='menu' id = 'footer-index'>
-                <a class = 'links' href='https://medium.com/@kevintian'>Medium</a>
-                <a class = 'links' href='https://linkedin.com/in/kev-in'>LinkedIn</a>
-            </div>
-        </div>
-    </div>
 </html>
