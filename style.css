@@ -45,6 +45,9 @@
 		color: #FFFFFF;
 	}
 
+	html.sr .load-hidden {
+		visibility: hidden;
+	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -160,6 +163,9 @@
 		margin-bottom: 0 !important;
 	}
 
+	html.sr .load-hidden {
+		visibility: hidden;
+	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -274,6 +280,9 @@
 		color: #FFFFFF;
 	}
 
+	html.sr .load-hidden {
+		visibility: hidden;
+	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -388,6 +397,9 @@
 		margin-bottom: 5px !important;
 	}
 
+	html.sr .load-hidden {
+		visibility: hidden;
+	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
