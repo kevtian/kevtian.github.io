@@ -23,8 +23,8 @@
 			$( window ).on( "load", readyFn);
 			function readyFn(jQuery) {
 				window.sr = ScrollReveal({ reset: false });
-				sr.reveal(".reveal", { easing: 'ease', duration: 500, distance: '10px', delay: 400, scale: .98,});
-				sr.reveal(".reveal-2", { easing: 'ease', duration: 500, distance: '10px', delay: 750, scale: .98,});
+				sr.reveal(".reveal", { easing: 'ease', duration: 600, distance: '10px', delay: 400, scale: 1,});
+				sr.reveal(".reveal-2", { easing: 'ease', duration: 600, distance: '10px', delay: 750, scale: 1,});
 			var options = {
 				strings:[
 				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with <3</span>', 
@@ -35,8 +35,10 @@
 				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch by Kevin Tian</span>'],
 				typeSpeed: 40,
 				backSpeed: 25,
-				backDelay: 1000,
+				backDelay: 1500,
 				smartBackspace: true,
+				loop: true,
+				loopCount: 2,
 			};
 			var typed = new Typed("#typed", options);
 			}
@@ -69,7 +71,7 @@
 		<!-- top links -->
 		<div class="container header">
 			<div class="row cols-12 adj-gutters reveal load-hidden">
-				<div class="col-lg-1 offset-lg-9 col-md-1 offset-md-9">
+				<div class="col-lg-1 offset-lg-10 col-md-1 offset-md-10">
 					<a class='links header-links' href='https://www.linkedin.com/in/kev-in'>LINKEDIN</a>
 				</div>
 				<div class="col-lg-1 offset-lg-0 col-md-1">
@@ -79,14 +81,14 @@
 		</div>
 		<div class="container">
 			<div class="row cols-12 adj-gutters reveal-2 load-hidden">
-				<div class="col-lg-3 offset-lg-1 col-md-3 offset-md-1 col-sm-4">
+				<div class="col-lg-2 offset-lg-1 col-md-2 offset-md-1 col-sm-2 offset-sm-1">
 					<img id='headshot' src="images/headshot-min.png" alt="Kevin Tian picture">
 				</div>
 
-				<div class="col-lg-4 offset-lg-1 col-md-5 offset-md-1 col-sm-5 offset-sm-1">
+				<div class="col-lg-5 offset-lg-1 col-md-6 offset-md-0 col-sm-6 offset-sm-1">
 					<h3>Hi, I'm Kevin Tian</h3>
 					<p>I'm a product designer with a technical background. I'm also a senior at Duke University studying CS with a focus on human-centered design.</p>
-					<p>Incoming UX Design Analyst in Bank of America's User Experience Design Program</p>
+					<p>Incoming UX Design Analyst in Bank of America's User Experience Design Program.</p>
 					<p style="font-style: italic; color: rgba(255, 255, 255, 0.5);">- previously</p>
 					<h6>Design Technologist Intern @ <a href='https://www.juvo.com'>Juvo</a></h6>
 					<p>I led an interaction design investigation of user flow in the primary Juvo app deployed via multiple MNOs internationally. I contributed peer-reviewed Swift code for future deployments. Finally, I recorded design findings and authored documentation of my practice in the Juvo Design System under the <a href="https://zeroheight.com/6wao89e8m/p/810163-motion/b/7595cb">Motion tab</a>.</p>
@@ -95,14 +97,14 @@
 					<p>The most beautiful design is </p>
 					<div class="row no-gutters align-items-start">
 						<div class="col-lg-3 col-md-3 col-sm-12">
-							<h6 id="design-text">honest.</h6>
+							<h6>honest.</h6>
 							<p id="star">✨</p>
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-12">
 							<p>It empower users and make their lives easier, and it doesn't mislead or decieve.</p>
 						</div>
 						<div class="col-lg-3 col-md-3 col-sm-12">
-							<h6 id="design-text">minimal.</h6>
+							<h6>minimal.</h6>
 							<p id="star">✨</p>
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-12">
@@ -110,7 +112,7 @@
 						</div>
 
 						<div class="col-lg-3 col-md-3 col-sm-5">
-							<h6 id="design-text">thorough.</h6>
+							<h6>thorough.</h6>
 							<p id="star">✨</p>
 						</div>
 						<div class="col-lg-9 col-md-9 col-sm-12">
