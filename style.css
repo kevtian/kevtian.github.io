@@ -1,53 +1,95 @@
 /*cleancss.com*/
-@media screen and (min-width: 50px){
-	body {
-		position: relative;
-		background: #232323;
-	}
+body {
+	background: #232323 !important;
+	display: inline-block;
+}
 
-	a {
-		text-decoration: underline;
-		color: #FFFFFF;
-	}
+a {
+	text-decoration: underline;
+	color: #FFFFFF;
+}
 
-	a:hover {
-		text-decoration: none !important;
-		color: #6AFFF6 !important;
-	}
+a:hover {
+	text-decoration: none !important;
+	color: #6AFFF6 !important;
+}
 
+p {
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+h4 {
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	color: #FFFFFF;
+}
+
+h6 {
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: 600;
+	letter-spacing: 0.15px;
+	color: #FFFFFF;
+}
+
+html.sr .load-hidden {
+	visibility: hidden;
+}
+
+.header-links {
+	float: right;
+	font-family: "Nunito";
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none !important;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+#subtitle {
+	font-family: "Nunito";
+	font-style: italic;
+	font-weight: 300;
+	letter-spacing: 0.5px;
+	color: #FFFFFF;
+}
+
+
+@media all and (min-width: 50px){
 	p {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 13px;
 		line-height: 18px;
-		letter-spacing: 0.5px;
-		color: #FFFFFF;
 	}
 
 	h3 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 24px;
 		line-height: 33px;
-		color: #FFFFFF;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 27px;
 	}
 
 	h6 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: 600 !important;
 		font-size: 12px;
 		line-height: 16px;
-		text-align: justify;
-		letter-spacing: 0.15px;
-		color: #FFFFFF;
 	}
 
-	html.sr .load-hidden {
-		visibility: hidden;
-	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -79,18 +121,33 @@
 	}
 
 	.header-links {
-		float: right;
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 13px;
 		line-height: 18px;
-		text-decoration: none !important;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
-		color: #FFFFFF;
 		margin-left: 10px !important;
 		margin-right: 10px !important;
+	}
+
+	.juvo-site {
+		width: 100%;
+		height: 65px;
+		margin-bottom: 12px;
+		background: url("images/juvo/juvo_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.juvo-site:hover {
+		width: 100%;
+		height: 65px;
+		margin-bottom: 12px;
+		background: url("images/juvo/juvo_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
+		transform: translate3d(0px, -1px, 0px);
 	}
 
 	#from-scratch{
@@ -106,61 +163,52 @@
 		border-radius: 8px;
 	}
 
+	#juvo_screens{
+		max-width: 224px;
+		height: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	#juvo_table_notes{
+		max-width: 240px;
+		height: auto;
+		margin-bottom: 50px;
+		display: block;
+	}
+
 	#star {
 		display: none;
 	}
+
+	#subtitle {
+		font-size: 10px;
+		line-height: 14px;
+	}
 }
 
-@media screen and (min-width: 450px){
-	body {
-		position: relative;
-		background: #232323;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #FFFFFF;
-	}
-
-	a:hover {
-		text-decoration: none !important;
-		color: #6AFFF6 !important;
-	}
-
+@media all and (min-width: 450px){
 	p {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 13px;
 		line-height: 18px;
-		letter-spacing: 0.5px;
-		color: #FFFFFF;
 	}
 
 	h3 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 24px;
 		line-height: 33px;
-		color: #FFFFFF;
+	}
+
+	h4 {
+		font-size: 20px;
+		line-height: 27px;
 	}
 
 	h6 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: 600;
 		font-size: 12px;
 		line-height: 16px;
-		text-align: justify;
-		letter-spacing: 0.15px;
-		color: #FFFFFF;
 		margin-bottom: 0 !important;
 	}
 
-	html.sr .load-hidden {
-		visibility: hidden;
-	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -193,17 +241,31 @@
 	}
 
 	.header-links {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 13px;
 		line-height: 18px;
-		text-decoration: none !important;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
-		color: #FFFFFF;
 		margin-left: 10px !important;
 		margin-right: 10px !important;
+	}
+
+	.juvo-site {
+		width: 100%;
+		margin-bottom: 12px;
+		background: url("images/juvo/juvo_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.juvo-site:hover {
+		width: 100%;
+		margin-bottom: 12px;
+		background: url("images/juvo/juvo_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
+		transform: translate3d(0px, -1px, 0px);
 	}
 
 	#from-scratch{
@@ -217,62 +279,52 @@
 		border-radius: 8px;
 	}
 
+	#juvo_screens{
+		max-width: 300px;
+		height: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	#juvo_table_notes{
+		max-width: 350px;
+		height: auto;
+		margin-bottom: 50px;
+		display: block;
+	}
+
 	#star {
-		display: inline !important;
+		display: inline;
+	}
+
+	#subtitle {
+		font-size: 10px;
+		line-height: 14px;
 	}
 }
 
 
-@media screen and (min-width: 994px){
-	body {
-		position: relative;
-		background: #232323;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #FFFFFF;
-	}
-
-	a:hover {
-		text-decoration: none !important;
-		color: #6AFFF6 !important;
-	}
-
+@media all and (min-width: 994px){
 	p {
-		font-family: Nunito;
-		font-style: normal;
-		font-weight: normal;
 		font-size: 15px;
 		line-height: 20px;
-		letter-spacing: 0.5px;
-		color: #FFFFFF;
 	}
 
 	h3 {
-		font-family: Nunito;
-		font-style: normal;
-		font-weight: normal;
 		font-size: 32px;
 		line-height: 44px;
-		text-align: justify;
-		color: #FFFFFF;
 	}
+
+	h4 {
+		font-size: 26px;
+		line-height: 30px;
+		letter-spacing: 0.25px;	}
 
 	h6 {
-		font-family: Nunito;
-		font-style: normal;
-		font-weight: 600;
 		font-size: 17px;
 		line-height: 20px;
-		text-align: justify;
-		letter-spacing: 0.15px;
-		color: #FFFFFF;
 	}
 
-	html.sr .load-hidden {
-		visibility: hidden;
-	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -305,18 +357,33 @@
 	}
 
 	.header-links {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 17px;
 		line-height: 23px;
-		letter-spacing: 0.5px;
-		text-decoration: none !important;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
-		color: #FFFFFF;
 		margin-left: 10px !important;
 		margin-right: 10px !important;
+	}
+
+	.juvo-site {
+		width: 100%;
+		height: 9%;
+		margin-bottom: 16px;
+		background: url("images/juvo/juvo_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.juvo-site:hover {
+		width: 100%;
+		height: 9%;
+		margin-bottom: 16px;
+		background: url("images/juvo/juvo_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 8px rgba(235, 235, 235, 0.5));
+		transform: translate3d(0px, -1px, 0px);
 	}
 
 	#from-scratch{
@@ -330,61 +397,55 @@
 		border-radius: 8px;
 	}
 
+	#juvo_screens{
+		max-width: 540px;
+		height: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	#juvo_table_notes{
+		max-width: 700px;
+		height: auto;
+		margin-bottom: 50px;
+		display: block;
+	}
+
 	#star {
-		display: inline !important;
+		display: inline;
+	}
+
+	#subtitle {
+		font-size: 12px;
+		line-height: 16px;
 	}
 }
 
 
-@media screen and (min-width: 1352px){
-	body {
-		position: relative;
-		background: #232323;
-	}
-
-	a {
-		text-decoration: underline;
-		color: #FFFFFF;
-	}
-
-	a:hover {
-		text-decoration: none !important;
-		color: #6AFFF6 !important;
-	}
-
+@media all and (min-width: 1352px){
 	p {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 17px;
 		line-height: 23px;
-		letter-spacing: 0.5px;
-		color: #FFFFFF;
 	}
 
 	h3 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 51px;
 		line-height: 70px;
 		color: #FFFFFF;
 	}
 
+	h4 {
+		font-size: 34px;
+		line-height: 46px;
+		letter-spacing: 0.25px;
+	}
+
 	h6 {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: 600;
 		font-size: 21px;
 		line-height: 23px;
-		letter-spacing: 0.15px;
-		color: #FFFFFF;
 		margin-bottom: 5px !important;
 	}
 
-	html.sr .load-hidden {
-		visibility: hidden;
-	}
 	.adj-gutters {
 	  margin-right: 20px;
 	  margin-left: 20px;
@@ -417,15 +478,32 @@
 	}
 
 	.header-links {
-		font-family: "Nunito";
-		font-style: normal;
-		font-weight: normal;
 		font-size: 17px;
 		line-height: 23px;
 		letter-spacing: 0.5px;
-		text-decoration: none !important;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
+	}
+
+	.juvo-site {
+		width: 100%;
+		height: 128px;
+		margin-bottom: 16px;
+		background: url("images/juvo/juvo_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.juvo-site:hover {
+		width: 100%;
+		height: 128px;
+		margin-bottom: 16px;
+		background: url("images/juvo/juvo_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
+		transform: translate3d(0px, -1px, 0px);
 	}
 
 	#from-scratch{
@@ -440,7 +518,26 @@
 		border-radius: 8px;
 	}
 
+	#juvo_screens{
+		max-width: 680px;
+		height: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+
+	#juvo_table_notes{
+		max-width: 914px;
+		height: auto;
+		margin-bottom: 50px;
+		display: block;
+	}
+
 	#star {
-		display: inline !important;
+		display: inline;
+	}
+
+	#subtitle {
+		font-size: 14px;
+		line-height: 19px;
 	}
 }

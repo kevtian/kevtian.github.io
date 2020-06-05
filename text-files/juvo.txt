@@ -1,0 +1,45 @@
+Quality of work (from Julie Zhuo):
+
+1. The idea (rationale, problem)
+2. Usability (thoughtful, easy, clear, common interactions)
+3. Craftmanship (sweat the details, well-made)
+
+Overview / Executive Summary
+Role: Design Technologist Intern
+Duration: 10 weeks
+
+"The greatest value animation adds to software is context. Animation takes something with no moving parts and adds the appearance of visible change. These noticeable changes provide us with tangible and familiar context, which makes our software more intuitive, discoverable, emotive, and recognizable."
+ - Ryan McLeod, "Animation Handbook," part of the Design Better series by InVision
+
+
+
+ 
+
+
+
+
+
+
+
+Problem statement
+The following problem statement addresses the three section of the Juvo Design System listed above.
+
+How can we apply interaction design principles to the JuvoUP product to make the app are more engaging for users and more successful for Juvo and our partners?
+
+"Engaging" should be considered in a two-fold manner:
+How pleasurable is the overall experience of the proposed solution. A primary goal for the project is to create a fluid interface (1, 2) for the JuvoUP product, where animations and interactions feel natural on all devices, regardless of device age, location, and user-specific idiosyncrasies
+
+How useful are the animations and micro-interactions in simplifying financial literacy concepts, such that the user can unconsciously learn about financial identity without interruption "Successful" can be quantified using user satisfaction feedback and with key performance metrics from Product such as user conversion rate.
+
+
+
+Users and audience
+
+Role and responsibilities
+
+Scope and constraints
+
+Process and what you did
+
+Outcomes and lessons
+
