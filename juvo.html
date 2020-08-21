@@ -11,11 +11,6 @@
         <link rel="stylesheet" href="min-style.css">
         <link rel="shortcut icon" type="image/x-icon" href="images/kt-logo.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"> </script>
-		<script>
-			WebFont.load({
-			google: { families: ['Nunito:300,400,600']
-			}}); </script>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 		<script>
@@ -23,22 +18,18 @@
 			$( window ).on( "load", readyFn);
 			function readyFn(jQuery) {
 				window.sr = ScrollReveal({ reset: false });
-				sr.reveal(".reveal", { easing: 'ease', duration: 600, distance: '10px', delay: 400, scale: 1,});
-				sr.reveal(".reveal-2", { easing: 'ease', duration: 600, distance: '10px', delay: 750, scale: 1,});
+				sr.reveal(".reveal", { easing: 'ease', duration: 600, distance: '24px', delay: 1000, scale: 1,});
 			var options = {
 				strings:[
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with <3</span>', 
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with Sublime Text</span>',
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with ☕️</span>',
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with Figma</span>', 
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch with grids</span>',
-				'<span style="font-family:Nunito; color: #ffffff;">Built from scratch by Kevin Tian</span>'],
+				'<span style="font-family:Open Sans; color: #ffffff;">Built with <3</span>', 
+				'<span style="font-family:Open Sans; color: #ffffff;">Built with Sublime Text</span>',
+				'<span style="font-family:Open Sans; color: #ffffff;">Built with ☕️</span>',
+				'<span style="font-family:Open Sans; color: #ffffff;">Built with Figma</span>', 
+				'<span style="font-family:Open Sans; color: #ffffff;">Built by Kevin Tian</span>'],
 				typeSpeed: 40,
 				backSpeed: 25,
 				backDelay: 1500,
 				smartBackspace: true,
-				loop: true,
-				loopCount: 2,
 			};
 			var typed = new Typed("#typed", options);
 			}
@@ -67,71 +58,119 @@
 		<h1 style="display:none">Kevin Tian</h1>
 		<h1 style="display:none">product design</h1>
 		<h1 style="display:none">Duke University</h1>
-		<!-- top links -->
-		<div class="container header">
-			<div class="row col-12 adj-gutters reveal load-hidden">
-				<div class="col-lg-1 offset-lg-10 col-md-1 offset-md-10">
-					<a class='links header-links' href='https://www.linkedin.com/in/kev-in'>LINKEDIN</a>
-				</div>
-				<div class="col-lg-1 offset-lg-0 col-md-1">
-					<a class='links header-links' href='assets/Resume_Kevin_Tian.pdf'>RESUME</a>
-				</div>
-			</div>
-		</div>
-		<div class="container reveal-2 load-hidden">
+		<div class="container reveal load-hidden" style="margin-top: 128px">
 			<div class="row adj-gutters justify-content-start">
 				<div class="col-lg-1 offset-lg-0 col-md-1 offset-md-0 col-sm-1 offset-sm-0">
 					<a href="index.html" style="text-decoration: none;"><p>← back</p></a>
 				</div>
 			</div>
 			<div class="row adj-gutters">
-				<div class="col-lg-6 offset-lg-3 col-md-8 offset-md-3 col-sm-12 offset-sm-0">
-					<h3> Checkout Experience at Juvo</h3>
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-12 offset-sm-0">
+					<h3>New Checkout Experience @ Juvo</h3>
 				</div>
 			</div>
 			<div class="row adj-gutters">
-				<div class="col-lg-6 offset-lg-3 col-md-6 offset-md-3 col-sm-8 offset-sm-2">
-					<img alt="Kevin Tian Juvo mobile app screen design" id="juvo_screens" src="images/juvo/juvo_screens_lg.png">
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-8 offset-sm-2">
+					<img style="width:100%;" alt="Kevin Tian Juvo mobile app screen design" src="images/juvo/juvo_screens_lg.png">
 				</div>
 			</div>
 			<div class="row adj-gutters">
-				<div class="col-lg-4 offset-lg-4 col-md-5 offset-md-3 col-sm-11 offset-sm-1">
-					<p id="subtitle" style="font-style: italic;">The content on this page is my own and does not necessarily reflect the views of Juvo.<p>
-					<p id="subtitle" style="font-style: italic; margin-bottom: 40px;">While I cannot fully showcase my design work and process here to remain in compliance with my NDA, you can still read an overview of my time at Juvo below. If you’re interested in learning more, please <a href="mailto: kevin.tian@duke.edu?subject=Hey Kevin! Want to learn about your time at Juvo">send me an email</a>.</p>
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-11 offset-sm-1">
+					<p id="subtitle">The content on this page is my own and does not necessarily reflect the views of Juvo Mobile Inc.<p>
+					<p id="subtitle" style="margin-bottom: 64px !important;">While I cannot show my design work and process here to remain in compliance with my NDA, you can still read an overview of my time at Juvo below. If you’re interested in learning more, please <a href="mailto: kevin.tian@duke.edu?subject=Hey Kevin! Want to learn about your time at Juvo">send me an email</a>.</p>
 					<h4>Overview</h4>
-					<p>Role: Design Technologist Intern<br>Timeframe: May–August 2019 (10 weeks)<br>Tools: Figma, XCode, InVision Studio, After Effects</p>
-					<h6>Key contributions: </h6>
-					<p>1. Proposed new user checkout interactions for the Juvo mobile app (JuvoUP)</p>
+					<p>Role: Design Technologist Intern</p>
+					<p>Timeframe: May – August 2019 (10 weeks)</p>
+					<p> Tools: InVision Suite, Figma, XCode, AfterEffects</p>
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Key contributions</p>
+					<p>1. Created new user checkout interactions for the JuvoUP mobile app</p>
 					<p>2. Reimagined the Juvo Design System</p>
-					<p style="margin-bottom: 40px;">3. Generated conversation surrounding interaction design (ID) and design in general internally at Juvo</p>
-					<h4>Process</h4>
-					<p style="margin-bottom: 40px;">My work at Juvo followed an iterative timeline that began with a careful user research investigation of the product deployments, followed by a series of three research, design and engineering (RDE) two-week sprints, included multiple Product and Design System focus group sessions, and concluded with a final presentation with prototype deliverables to the entire team of Juvo HQ in SF.</p>
+					<p style="margin-bottom: 64px !important;">3. Sparked interaction design (IxD) conversation at Juvo</p>
 				</div>
 			</div>
+
 			<div class="row adj-gutters">
-				<div class="col-lg-8 offset-lg-2 col-md-10 offset-md-2 col-sm-10 offset-sm-1">
-					<img style="margin-bottom: 40px;" alt="Kevin Tian Juvo design notes" id="juvo_table_notes" src="images/juvo/juvo_stickynotes_lg.png">
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-8 offset-sm-2">
+					<img style="width:100%; margin-bottom: 64px !important;" alt="Kevin Tian Juvo mobile app screen design" src="images/juvo/desk.png">
 				</div>
 			</div>
+
+			<!-- PROBLEM STATEMENT -->
 			<div class="row adj-gutters">
-				<div class="col-lg-4 offset-lg-4 col-md-5 offset-md-3 col-sm-11 offset-sm-1">
+				<div class="col-lg-9 offset-lg-1 col-md-10 offset-md-0 col-sm-10 offset-sm-1">
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Problem statement</p>
+					<h4 style="margin-bottom: 64px !important">"How might we apply interaction design principles to the JuvoUP product to make the app are more engaging for users and more successful for Juvo and our partners?"</h4>
+				</div>
+			</div>
+
+
+			<!-- WORKFLOW -->
+			<div class="row adj-gutters">
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-11 offset-sm-1">
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Problem validation</p>
+					<p style="margin-bottom: 64px !important"> This problem statement was validated by conducting exploratory user research and small-group mobile app testing.</p>
+
+
+
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Hypothesis</p>
+					<p>The following hypothesis was formed on the basis of the problem statement, initial findings, and exploratory research:</p>
+					<p style="margin-bottom: 64px !important">"We believe that implementing simple micro-interactions such as animation and haptic feedback will achieve greater overall user satisfaction with the app because it satisfies usability guidelines and is both visually and functionally appealing."</p>
+					
+
+
+					<img style="width:100%; margin-bottom: 64px !important;" alt="Kevin Tian Juvo mobile app screen design" src="images/juvo/whiteboard.png">
+
+
+
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Agenda</p>
+					<p>Audit of current Juvo mobile app offerings and usage of micro-interactions</p>
+					<p>Review WWDC 2018 Designing Fluid Interfaces</p>
+					<p>Present project proposal to Product team and Engineering manager for sign-off</p>
+					<p>Conduct three Research, Design, and Engineering (RDE) sprints following a divergent/convergent framework</p>
+					<p>Complete deliverables: prototypes in InVision Studio and Swift code</p>
+					<p style="margin-bottom: 64px !important">Present the future of IxD for Juvo mobile in an All Hands</p>
+
+
+
+					<p style="margin-bottom: 64px !important">Want a more in-depth explanation of this work, with added visuals? please <a href="mailto: kevin.tian@duke.edu?subject=Hey Kevin! Want to learn about your time at Juvo">send me an email</a>.</p>
+				</div>
+			</div>
+
+
+			<div class="row adj-gutters">
+				<div class="col-lg-9 offset-lg-1 col-md-10 offset-md-0 col-sm-10 offset-sm-1">
+					<img style="margin-bottom: 64px !important; width: 100%;" alt="Kevin Tian Juvo design notes" src="images/juvo/juvo_stickynotes_lg.png">
+				</div>
+			</div>
+
+
+			<div class="row adj-gutters">
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-11 offset-sm-1">
 					<h4>Impact</h4>
-					<h6>1. New user checkout interactions</h6>
-					<p style="margin-bottom: 40px;">I explored interaction design principles and best practices to improve the user experience of making a purchase and seeing the purchase confirmation message in the JuvoUP mobile app—critical points in the user journey of Juvo’s primary mobile app offering.</p>
+					
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">New user checkout interactions</p>
+					<p>I explored interaction design principles and best practices. With these principles in mind, I created prototypes for the future of the Juvo mobile app interaction design.</p>
+					<p style="margin-bottom: 64px !important;">I focused on enhancing the UX of making a purchase and seeing the purchase confirmation message, both very critical points in the user journey.</p>
+					
 
-					<h6>2. Reimagined the Juvo Design System</h6>
-					<p style="margin-bottom: 40px;">I joined Juvo when the Product and Design teams were convinced of the merits of a design system, but the existing design system was not functioning seamlessly cross-functionally. With members of Juvo Design in focus group sessions, I dissected the communication & technical barriers hindering uptake within Juvo before offering suggestions based on my research of other well-known design systems.<br><br>Moreover, I authored documentation of animation, transitions, and micro-animations based on my own work in the existing Juvo Design System.</p>
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Reimagined the Juvo Design System</p>
+					<p >When I joined on at Juvo, the company was sold on adopting a design system, but the existing design system was not functioning seamlessly cross-functionally, particularly in the design-dev hand-off.</p>
+					<p>Along with members of Juvo Design in focus group sessions, I dissected the communication & technical barriers hindering full adoption within Juvo before offering suggestions based on my research of other well-known industry design systems.</p>
+					<p style="margin-bottom: 64px !important;">Moreover, I authored documentation of animation, transitions, and micro-animations based on my own work in the <a target="new_tab" href="https://zeroheight.com/6wao89e8m/p/810163-motion/b/89ac13">Juvo Design System</a>.</p>
+					
 
-					<h6>3. Sparked design conversation at Juvo</h6>
-					<p>Crafting a beautiful product and user experience is impossible unless everyone who works on the product believes in the design process. It was a welcome surprise that my project and time at Juvo would spark so much interest and conversation among all teams at Juvo HQ, including Engineering, about interaction design and the general “feel” of the app.</p>
+
+					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">Sparked design conversation at Juvo</p>
+					<p>Crafting a beautiful product and user experience is impossible unless everyone who works on the product believes in the design process.</p>
+					<p>It was a welcome surprise that my project and time at Juvo would spark so much interest and conversation among all teams at Juvo HQ about interaction design and the general “feel” of the app.</p>
 				</div>
 			</div>
 			<div class="row adj-gutters">
-				<div class="col-lg-4 offset-lg-4 col-md-6 offset-md-3 col-sm-6 offset-sm-1">
+				<div class="col-lg-5 offset-lg-5 col-md-6 offset-md-2 col-sm-6 offset-sm-1">
 					<div id="from-scratch">
 						<span id="typed"></span>
 						<noscript>
-							<p>Built from scratch by Kevin Tian</p>
+							<p>Built by Kevin Tian</p>
 						</noscript>
 					</div>
 				</div>

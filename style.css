@@ -5,42 +5,39 @@ body {
 }
 
 a {
-	text-decoration: underline;
-	color: #FFFFFF;
+	color: #249CFF;
 }
 
 a:hover {
-	text-decoration: none !important;
-	color: #6AFFF6 !important;
+	color: #5CB6FF !important;
 }
 
 p {
-	font-family: "Nunito";
+	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: 0.5px;
 	color: #FFFFFF;
+	margin-bottom: 24px !important;
 }
 
 h3 {
-	font-family: "Nunito";
+	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: normal;
 	color: #FFFFFF;
 }
 
 h4 {
-	font-family: "Nunito";
+	font-family: "Open Sans";
 	font-style: normal;
-	font-weight: 600;
 	text-align: center;
 	color: #FFFFFF;
 }
 
 h6 {
-	font-family: "Nunito";
+	font-family: "Open Sans";
 	font-style: normal;
-	font-weight: 600;
 	letter-spacing: 0.15px;
 	color: #FFFFFF;
 }
@@ -51,21 +48,18 @@ html.sr .load-hidden {
 
 .header-links {
 	float: right;
-	font-family: "Nunito";
+	font-family: "Open Sans";
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none !important;
 	letter-spacing: 0.5px;
-	text-transform: uppercase;
 	color: #FFFFFF;
 }
 
 #subtitle {
-	font-family: "Nunito";
-	font-style: italic;
-	font-weight: 300;
+	font-family: "Open Sans";
 	letter-spacing: 0.5px;
-	color: #FFFFFF;
+	color: #EEEEEE;
 }
 
 
@@ -130,7 +124,6 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 65px;
-		margin-bottom: 12px;
 		background: url("images/juvo/juvo_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
@@ -141,13 +134,54 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 65px;
-		margin-bottom: 12px;
 		background: url("images/juvo/juvo_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
 		transform: translate3d(0px, -1px, 0px);
+	}
+
+	.bofa-site {
+		width: 100%;
+		height: 65px;
+		background: url("images/bofa/bofa_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.bofa-site:hover {
+		width: 100%;
+		height: 65px;
+		background: url("images/bofa/bofa_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
+	}
+
+	.ddhp-site {
+		width: 100%;
+		height: 65px;
+		background: url("images/ddhp/design_health_static.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.ddhp-site:hover {
+		width: 100%;
+		height: 65px;
+		background: url("images/ddhp/design_health_hover.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
 	}
 
 	#from-scratch{
@@ -161,20 +195,6 @@ html.sr .load-hidden {
 		float: left;
 		margin-bottom: 18px;
 		border-radius: 8px;
-	}
-
-	#juvo_screens{
-		max-width: 224px;
-		height: auto;
-		margin-bottom: 10px;
-		display: block;
-	}
-
-	#juvo_table_notes{
-		max-width: 240px;
-		height: auto;
-		margin-bottom: 50px;
-		display: block;
 	}
 
 	#star {
@@ -249,7 +269,6 @@ html.sr .load-hidden {
 
 	.juvo-site {
 		width: 100%;
-		margin-bottom: 12px;
 		background: url("images/juvo/juvo_static_lg.png");
 		display: inline-block;
 		background-size: contain;
@@ -259,13 +278,50 @@ html.sr .load-hidden {
 
 	.juvo-site:hover {
 		width: 100%;
-		margin-bottom: 12px;
 		background: url("images/juvo/juvo_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
 		transform: translate3d(0px, -1px, 0px);
+	}
+
+	.bofa-site {
+		width: 100%;
+		background: url("images/bofa/bofa_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.bofa-site:hover {
+		width: 100%;
+		background: url("images/bofa/bofa_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
+	}
+
+	.ddhp-site {
+		width: 100%;
+		background: url("images/ddhp/design_health_static.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.ddhp-site:hover {
+		width: 100%;
+		background: url("images/ddhp/design_health_hover.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
 	}
 
 	#from-scratch{
@@ -277,20 +333,6 @@ html.sr .load-hidden {
 		width: 78px;
 		height: 138.61px;
 		border-radius: 8px;
-	}
-
-	#juvo_screens{
-		max-width: 300px;
-		height: auto;
-		margin-bottom: 10px;
-		display: block;
-	}
-
-	#juvo_table_notes{
-		max-width: 350px;
-		height: auto;
-		margin-bottom: 50px;
-		display: block;
 	}
 
 	#star {
@@ -366,7 +408,6 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 9%;
-		margin-bottom: 16px;
 		background: url("images/juvo/juvo_static_lg.png");
 		display: inline-block;
 		background-size: contain;
@@ -377,13 +418,54 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 9%;
-		margin-bottom: 16px;
 		background: url("images/juvo/juvo_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(235, 235, 235, 0.5));
 		transform: translate3d(0px, -1px, 0px);
+	}
+
+	.bofa-site {
+		width: 100%;
+		height: 9%;
+		background: url("images/bofa/bofa_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.bofa-site:hover {
+		width: 100%;
+		height: 9%;
+		background: url("images/bofa/bofa_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
+	}
+
+	.ddhp-site {
+		width: 100%;
+		height: 9%;
+		background: url("images/ddhp/design_health_static.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.ddhp-site:hover {
+		width: 100%;
+		height: 9%;
+		background: url("images/ddhp/design_health_hover.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
 	}
 
 	#from-scratch{
@@ -395,20 +477,6 @@ html.sr .load-hidden {
 		width: 140px;
 		height: 248.78px;
 		border-radius: 8px;
-	}
-
-	#juvo_screens{
-		max-width: 540px;
-		height: auto;
-		margin-bottom: 10px;
-		display: block;
-	}
-
-	#juvo_table_notes{
-		max-width: 700px;
-		height: auto;
-		margin-bottom: 50px;
-		display: block;
 	}
 
 	#star {
@@ -486,7 +554,6 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 128px;
-		margin-bottom: 16px;
 		background: url("images/juvo/juvo_static_lg.png");
 		display: inline-block;
 		background-size: contain;
@@ -497,13 +564,54 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 128px;
-		margin-bottom: 16px;
 		background: url("images/juvo/juvo_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
-		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
-		transform: translate3d(0px, -1px, 0px);
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
+	}
+
+	.bofa-site {
+		width: 100%;
+		height: 128px;
+		background: url("images/bofa/bofa_static_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.bofa-site:hover {
+		width: 100%;
+		height: 128px;
+		background: url("images/bofa/bofa_hover_lg.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
+	}
+
+	.ddhp-site {
+		width: 100%;
+		height: 128px;
+		background: url("images/ddhp/design_health_static.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.ddhp-site:hover {
+		width: 100%;
+		height: 128px;
+		background: url("images/ddhp/design_health_hover.png");
+		display: inline-block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
+		transform: translate3d(0px, -2px, 0px);
 	}
 
 	#from-scratch{
@@ -516,20 +624,6 @@ html.sr .load-hidden {
 		width: 213px;
 		height: 378.5px;
 		border-radius: 8px;
-	}
-
-	#juvo_screens{
-		max-width: 680px;
-		height: auto;
-		margin-bottom: 10px;
-		display: block;
-	}
-
-	#juvo_table_notes{
-		max-width: 914px;
-		height: auto;
-		margin-bottom: 50px;
-		display: block;
 	}
 
 	#star {
