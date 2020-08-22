@@ -124,7 +124,7 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 65px;
-		background: url("images/juvo/juvo_hover_lg.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -134,7 +134,7 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 65px;
-		background: url("images/juvo/juvo_hover_lg.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -145,7 +145,7 @@ html.sr .load-hidden {
 	.bofa-site {
 		width: 100%;
 		height: 65px;
-		background: url("images/bofa/bofa_hover_lg.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -155,7 +155,7 @@ html.sr .load-hidden {
 	.bofa-site:hover {
 		width: 100%;
 		height: 65px;
-		background: url("images/bofa/bofa_hover_lg.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -269,7 +269,7 @@ html.sr .load-hidden {
 
 	.juvo-site {
 		width: 100%;
-		background: url("images/juvo/juvo_static_lg.png");
+		background: url("images/juvo/juvo_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -278,7 +278,7 @@ html.sr .load-hidden {
 
 	.juvo-site:hover {
 		width: 100%;
-		background: url("images/juvo/juvo_hover_lg.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -288,7 +288,7 @@ html.sr .load-hidden {
 
 	.bofa-site {
 		width: 100%;
-		background: url("images/bofa/bofa_static_lg.png");
+		background: url("images/bofa/bofa_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -297,7 +297,7 @@ html.sr .load-hidden {
 
 	.bofa-site:hover {
 		width: 100%;
-		background: url("images/bofa/bofa_hover_lg.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -408,7 +408,7 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 9%;
-		background: url("images/juvo/juvo_static_lg.png");
+		background: url("images/juvo/juvo_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -418,7 +418,7 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 9%;
-		background: url("images/juvo/juvo_hover_lg.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -429,7 +429,7 @@ html.sr .load-hidden {
 	.bofa-site {
 		width: 100%;
 		height: 9%;
-		background: url("images/bofa/bofa_static_lg.png");
+		background: url("images/bofa/bofa_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -439,7 +439,7 @@ html.sr .load-hidden {
 	.bofa-site:hover {
 		width: 100%;
 		height: 9%;
-		background: url("images/bofa/bofa_hover_lg.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -554,7 +554,7 @@ html.sr .load-hidden {
 	.juvo-site {
 		width: 100%;
 		height: 128px;
-		background: url("images/juvo/juvo_static_lg.png");
+		background: url("images/juvo/juvo_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -564,7 +564,7 @@ html.sr .load-hidden {
 	.juvo-site:hover {
 		width: 100%;
 		height: 128px;
-		background: url("images/juvo/juvo_hover_lg.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -575,7 +575,7 @@ html.sr .load-hidden {
 	.bofa-site {
 		width: 100%;
 		height: 128px;
-		background: url("images/bofa/bofa_static_lg.png");
+		background: url("images/bofa/bofa_static_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -585,7 +585,7 @@ html.sr .load-hidden {
 	.bofa-site:hover {
 		width: 100%;
 		height: 128px;
-		background: url("images/bofa/bofa_hover_lg.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
