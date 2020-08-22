@@ -269,7 +269,7 @@ html.sr .load-hidden {
 
 	.juvo-site {
 		width: 100%;
-		background: url("images/juvo/juvo_static_sm.png");
+		background: url("images/juvo/juvo_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -288,7 +288,7 @@ html.sr .load-hidden {
 
 	.bofa-site {
 		width: 100%;
-		background: url("images/bofa/bofa_static_sm.png");
+		background: url("images/bofa/bofa_hover_sm.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -307,7 +307,7 @@ html.sr .load-hidden {
 
 	.ddhp-site {
 		width: 100%;
-		background: url("images/ddhp/design_health_static.png");
+		background: url("images/ddhp/design_health_hover.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
