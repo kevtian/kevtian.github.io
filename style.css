@@ -145,7 +145,7 @@ html.sr .load-hidden {
 	.bofa-site {
 		width: 100%;
 		height: 65px;
-		background: url("images/bofa/bofa_static_lg.png");
+		background: url("images/bofa/bofa_hover_lg.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
@@ -166,7 +166,7 @@ html.sr .load-hidden {
 	.ddhp-site {
 		width: 100%;
 		height: 65px;
-		background: url("images/ddhp/design_health_static.png");
+		background: url("images/ddhp/design_health_hover.png");
 		display: inline-block;
 		background-size: contain;
 		background-repeat: no-repeat;
