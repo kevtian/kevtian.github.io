@@ -1,6 +1,6 @@
 /*cleancss.com*/
 body {
-	background: #232323 !important;
+	background: #232323;
 	display: inline-block;
 }
 
@@ -56,10 +56,28 @@ html.sr .load-hidden {
 	color: #FFFFFF;
 }
 
+#flip_colors_button {
+	width: 12px;
+	height: 12px;
+	margin-top: 44px;
+	background-color: white;
+	border-radius: 6px;
+}
+
+#flip_colors_button:hover {
+	background-color: #5CB6FF !important;
+	border-radius: 7px;
+	cursor: pointer;
+}
+
 #subtitle {
 	font-family: "Open Sans";
 	letter-spacing: 0.5px;
 	color: #EEEEEE;
+}
+
+.hidden {
+	visibility: hidden;
 }
 
 
@@ -82,17 +100,6 @@ html.sr .load-hidden {
 	h6 {
 		font-size: 12px;
 		line-height: 16px;
-	}
-
-	.adj-gutters {
-	  margin-right: 20px;
-	  margin-left: 20px;
-
-	  > .col,
-	  > [class*="col-"] {
-	    padding-right: 5px;
-	    padding-left: 5px;
-	  }
 	}
 
 	.container {
@@ -132,12 +139,6 @@ html.sr .load-hidden {
 	}
 
 	.juvo-site:hover {
-		width: 100%;
-		height: 65px;
-		background: url("images/juvo/juvo_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
 		transform: translate3d(0px, -1px, 0px);
 	}
@@ -153,12 +154,6 @@ html.sr .load-hidden {
 	}
 
 	.bofa-site:hover {
-		width: 100%;
-		height: 65px;
-		background: url("images/bofa/bofa_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -174,12 +169,6 @@ html.sr .load-hidden {
 	}
 
 	.ddhp-site:hover {
-		width: 100%;
-		height: 65px;
-		background: url("images/ddhp/design_health_hover.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -207,7 +196,7 @@ html.sr .load-hidden {
 	}
 }
 
-@media all and (min-width: 450px){
+@media all and (min-width: 576px){
 	p {
 		font-size: 13px;
 		line-height: 18px;
@@ -227,17 +216,6 @@ html.sr .load-hidden {
 		font-size: 12px;
 		line-height: 16px;
 		margin-bottom: 0 !important;
-	}
-
-	.adj-gutters {
-	  margin-right: 20px;
-	  margin-left: 20px;
-
-	  > .col,
-	  > [class*="col-"] {
-	    padding-right: 5px;
-	    padding-left: 5px;
-	  }
 	}
 
 	.container {
@@ -277,11 +255,6 @@ html.sr .load-hidden {
 	}
 
 	.juvo-site:hover {
-		width: 100%;
-		background: url("images/juvo/juvo_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(255, 255, 255, 0.5));
 		transform: translate3d(0px, -1px, 0px);
 	}
@@ -296,11 +269,6 @@ html.sr .load-hidden {
 	}
 
 	.bofa-site:hover {
-		width: 100%;
-		background: url("images/bofa/bofa_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -315,11 +283,6 @@ html.sr .load-hidden {
 	}
 
 	.ddhp-site:hover {
-		width: 100%;
-		background: url("images/ddhp/design_health_hover.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -367,17 +330,6 @@ html.sr .load-hidden {
 		line-height: 20px;
 	}
 
-	.adj-gutters {
-	  margin-right: 20px;
-	  margin-left: 20px;
-
-	  > .col,
-	  > [class*="col-"] {
-	    padding-right: 10px;
-	    padding-left: 10px;
-	  }
-	}
-
 	.container {
 		max-width: 1200px;
 	}
@@ -407,7 +359,7 @@ html.sr .load-hidden {
 
 	.juvo-site {
 		width: 100%;
-		height: 9%;
+		height: 100px;
 		background: url("images/juvo/juvo_static_sm.png");
 		display: inline-block;
 		background-size: contain;
@@ -416,19 +368,13 @@ html.sr .load-hidden {
 	}
 
 	.juvo-site:hover {
-		width: 100%;
-		height: 9%;
-		background: url("images/juvo/juvo_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 8px rgba(235, 235, 235, 0.5));
 		transform: translate3d(0px, -1px, 0px);
 	}
 
 	.bofa-site {
 		width: 100%;
-		height: 9%;
+		height: 100px;
 		background: url("images/bofa/bofa_static_sm.png");
 		display: inline-block;
 		background-size: contain;
@@ -437,19 +383,13 @@ html.sr .load-hidden {
 	}
 
 	.bofa-site:hover {
-		width: 100%;
-		height: 9%;
-		background: url("images/bofa/bofa_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
 
 	.ddhp-site {
 		width: 100%;
-		height: 9%;
+		height: 100px;
 		background: url("images/ddhp/design_health_static.png");
 		display: inline-block;
 		background-size: contain;
@@ -458,12 +398,6 @@ html.sr .load-hidden {
 	}
 
 	.ddhp-site:hover {
-		width: 100%;
-		height: 9%;
-		background: url("images/ddhp/design_health_hover.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -514,17 +448,6 @@ html.sr .load-hidden {
 		margin-bottom: 5px !important;
 	}
 
-	.adj-gutters {
-	  margin-right: 20px;
-	  margin-left: 20px;
-
-	  > .col,
-	  > [class*="col-"] {
-	    padding-right: 10px;
-	    padding-left: 10px;
-	  }
-	}
-
 	.container {
 		max-width: 1440px;
 	}
@@ -562,12 +485,6 @@ html.sr .load-hidden {
 	}
 
 	.juvo-site:hover {
-		width: 100%;
-		height: 128px;
-		background: url("images/juvo/juvo_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -583,12 +500,6 @@ html.sr .load-hidden {
 	}
 
 	.bofa-site:hover {
-		width: 100%;
-		height: 128px;
-		background: url("images/bofa/bofa_hover_sm.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}
@@ -604,12 +515,6 @@ html.sr .load-hidden {
 	}
 
 	.ddhp-site:hover {
-		width: 100%;
-		height: 128px;
-		background: url("images/ddhp/design_health_hover.png");
-		display: inline-block;
-		background-size: contain;
-		background-repeat: no-repeat;
 		filter: drop-shadow(0px 4px 10px rgba(100, 100, 100, 1));
 		transform: translate3d(0px, -2px, 0px);
 	}

@@ -8,7 +8,7 @@
         <meta name="description" content="Designer who is currently studying computer science and psychology at Duke University">
         <meta name="author" content="Kevin Tian">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <link rel="stylesheet" href="min-style.css">
+        <link rel="stylesheet" href="style.css">
         <link rel="shortcut icon" type="image/x-icon" href="images/kt-logo.ico">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
@@ -30,9 +30,29 @@
 				backSpeed: 25,
 				backDelay: 1500,
 				smartBackspace: true,
+				cursor: false
 			};
 			var typed = new Typed("#typed", options);
 			}
+
+			var toggled = false;
+			$(document).ready(function(){
+				$('#flip_colors_button').click(function() {
+					$('.body-content').toggleClass('hidden');
+					$('.image-content').toggle();
+					$('.shortened').toggleClass('hidden');
+					if (!toggled) {
+						$('body').css('background', '#ffffff');
+						$('#flip_colors_button').css('background-color', '#232323');
+						toggled = true;
+					}
+					else {
+						$('body').first().css('background', '#232323');
+						$('#flip_colors_button').css('background-color', '#ffffff');
+						toggled = false;
+					}
+			    });
+			});
 		</script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124070068-1"></script>
         <script>
@@ -59,58 +79,66 @@
 		<h1 style="display:none">Kevin Tian</h1>
 		<h1 style="display:none">product design</h1>
 		<h1 style="display:none">Duke University</h1>
-		<div class="container" style="margin-top: 128px">
-			<div class="row col-12 adj-gutters reveal load-hidden">
-				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-4 offset-sm-1">
-					<h3>Kevin Tian </h3>
-					<p>Nice to meet ya, I'm Kevin! I'm a designer, a senior at Duke University, and a lover of great storytelling. This past summer, I was a UX Design intern at Bank of America and an undergraduate Design Fellow in the <a href="http://designhealth.duke.edu/">Duke Design Health Program</a>.</p>
-					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- explore my work</p>
-					<a href="bofa.html" alt="Kevin Tian at Bank of America">
-						<div class="bofa-site" style="margin-bottom: 24px"></div>
-					</a>
-					<a href="design-health.html" alt="Kevin Tian at Duke Design Health">
-						<div class="ddhp-site" style="margin-bottom: 24px"></div>
-					</a>
-					<a href="juvo.html" alt="Kevin Tian at Juvo">
-						<div class="juvo-site" ></div>
-					</a>
-					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- core design principles</p>
-					<p>The most beautiful design is </p>
-					<div class="row no-gutters align-items-start">
-						<div class="col-lg-3 col-md-3 col-sm-12">
-							<p>honest.</p>
+
+		<div class="container">
+			<div class="row col-12 reveal load-hidden">
+				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-6 offset-sm-1">
+					<p id="flip_colors_button"><a></a></p>
+					<h6 class="shortened hidden" style="color: #232323; margin-bottom: 8px !important;">Hi there 👋</h6>
+					<p class="shortened hidden" style="color: #232323; margin-bottom: 8px !important;">Here's my <a target="_blank" class="shortened hidden" style="color: #249CFF; margin-bottom: 0px !important" href="assets/Resume_Kevin_Tian.pdf">resume and contact info</a>.</p>
+
+					<div class="body-content">
+						<h3>Kevin Tian </h3>
+						<p>Nice to meet ya, I'm Kevin! I'm a designer, a senior at Duke University, and a lover of great storytelling. This past summer, I was a UX Design intern at <a href="https://bankofamerica.com">Bank of America</a> and an undergraduate Design Fellow in the <a href="http://designhealth.duke.edu/">Duke Design Health Program</a>.</p>
+						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- explore my work</p>
+						<a href="bofa.html" alt="Kevin Tian at Bank of America">
+							<div class="bofa-site image-content" style="margin-bottom: 24px"></div>
+						</a>
+						<a href="design-health.html" alt="Kevin Tian at Duke Design Health">
+							<div class="ddhp-site image-content" style="margin-bottom: 24px"></div>
+						</a>
+						<a href="juvo.html" alt="Kevin Tian at Juvo">
+							<div class="juvo-site image-content" ></div>
+						</a>
+						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- core design principles</p>
+						<p>The most beautiful design is </p>
+						<div class="row no-gutters align-items-start">
+							<div class="col-lg-3 col-md-3 col-sm-12">
+								<p>honest.</p>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-12">
+								<p>Empower people and makes their lives easier, without misleading or deceiving.</p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-12">
+								<p>minimal.</p>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-12">
+								<p>Capture the essentials—and hide the rest.</p>
+							</div>
+							<div class="col-lg-3 col-md-3 col-sm-5">
+								<p>thorough.</p>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-12">
+								<p>Design and refine solutions with the user to push past expectations.</p>
+							</div>
 						</div>
-						<div class="col-lg-9 col-md-9 col-sm-12">
-							<p>Empower people and makes their lives easier, without misleading or deceiving.</p>
+						<p>Each of my previous product design experiences reflect my passion for empowering underserved users and highlight my ability to design with these guiding principles even when faced with unique constraints.</p>
+						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- in my free time</p>
+						<p>I enjoy writing and reading case studies on my <a href="https://www.medium.com/@kevintian">Medium</a>.</p>
+						<p>As a college student, I've kept myself busy by exploring design principles with the <a href="https://www.hackduke.org">HackDuke Design team</a>; learning traditional and modern-style dance with <a href="https://www.dukechinesedance.com">Duke Chinese Dance</a>; sharing my love of STEM by mentoring Durham middle schoolers with <a href="http://www.sites.duke.edu/innoworks/our-story">Duke Innoworks</a>; and playing tennis with the Club Tennis team.</p>
+						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- let's connect</p>
+						<p>Take a look at my <a target="_blank" class='links' href='assets/Resume_Kevin_Tian.pdf'>resume</a>, reach out by email at kevin.tian@duke.edu, or connect with me on <a class='links' href='https://www.linkedin.com/in/kev-in'>LinkedIn</a>.</p>
+						<div id="from-scratch">
+							<span id="typed"></span>
+							<noscript>
+								<p>Built by Kevin Tian</p>
+							</noscript>
 						</div>
-						<div class="col-lg-3 col-md-3 col-sm-12">
-							<p>minimal.</p>
-						</div>
-						<div class="col-lg-9 col-md-9 col-sm-12">
-							<p>Capture the essentials—and hide the rest.</p>
-						</div>
-						<div class="col-lg-3 col-md-3 col-sm-5">
-							<p>thorough.</p>
-						</div>
-						<div class="col-lg-9 col-md-9 col-sm-12">
-							<p>Design and refine solutions with the user to push past expectations.</p>
-						</div>
-					</div>
-					<p>Each of my previous product design experiences reflect my passion for empowering underserved users and highlight my ability to design with these guiding principles even when faced with unique constraints.</p>
-					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- in my free time</p>
-					<p>I enjoy writing and reading case studies on my <a href="https://www.medium.com/@kevintian">Medium</a>.</p>
-					<p>As a college student, I've kept myself busy by exploring design principles with the <a href="https://www.hackduke.org">HackDuke Design team</a>; learning traditional and modern-style dance with <a href="https://www.dukechinesedance.com">Duke Chinese Dance</a>; sharing my love of STEM by mentoring Durham middle schoolers with <a href="http://www.sites.duke.edu/innoworks/our-story">Duke Innoworks</a>; and playing tennis with the Club Tennis team.</p>
-					<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- let's connect</p>
-					<p>Take a look at my <a class='links' href='assets/Resume_Kevin_Tian.pdf'>resume</a>, reach out by email at kevin.tian@duke.edu, or connect with me on <a class='links' href='https://www.linkedin.com/in/kev-in'>LinkedIn</a>.</p>
-					<div id="from-scratch">
-						<span id="typed"></span>
-						<noscript>
-							<p>Built by Kevin Tian</p>
-						</noscript>
 					</div>
 				</div>
 			</div>
 		</div>
+	
 	</body>
 
 </html>
