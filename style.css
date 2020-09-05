@@ -13,30 +13,31 @@ a:hover {
 }
 
 p {
-	font-family: "Open Sans";
+	font-family: "Lato";
 	font-style: normal;
 	font-weight: normal;
 	letter-spacing: 0.5px;
 	color: #FFFFFF;
-	margin-bottom: 24px !important;
+	margin-bottom: 24px;
 }
 
 h3 {
-	font-family: "Open Sans";
+	font-family: "Lato";
 	font-style: normal;
 	font-weight: normal;
 	color: #FFFFFF;
+	margin-top: 44px;
 }
 
 h4 {
-	font-family: "Open Sans";
+	font-family: "Lato";
 	font-style: normal;
 	text-align: center;
 	color: #FFFFFF;
 }
 
 h6 {
-	font-family: "Open Sans";
+	font-family: "Lato";
 	font-style: normal;
 	letter-spacing: 0.15px;
 	color: #FFFFFF;
@@ -48,7 +49,7 @@ html.sr .load-hidden {
 
 .header-links {
 	float: right;
-	font-family: "Open Sans";
+	font-family: "Lato";
 	font-style: normal;
 	font-weight: normal;
 	text-decoration: none !important;
@@ -56,28 +57,56 @@ html.sr .load-hidden {
 	color: #FFFFFF;
 }
 
-#flip_colors_button {
+.flip_colors_button {
 	width: 12px;
 	height: 12px;
-	margin-top: 44px;
+	margin-top: 64px;
 	background-color: white;
 	border-radius: 6px;
 }
 
-#flip_colors_button:hover {
+#animate {
+	animation-name: dot;
+	animation-duration: 1.5s;
+	animation-delay: 5s;
+	animation-iteration-count: 10;
+}
+
+.flip_colors_button:hover {
 	background-color: #5CB6FF !important;
 	border-radius: 7px;
 	cursor: pointer;
 }
 
 #subtitle {
-	font-family: "Open Sans";
+	font-family: "Lato";
 	letter-spacing: 0.5px;
 	color: #EEEEEE;
+	color: rgba(255, 255, 255, 0.5); 
+	margin-bottom: 8px !important; 
+	margin-top: 32px !important;
+}
+
+.headshot {
+	width: 50%;
+	height: auto;
+	border-radius: 10px; 
+	margin: 16px 0px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .hidden {
-	visibility: hidden;
+	visibility: hidden !important;
+}
+
+.remove {
+	display: none;
+}
+
+@keyframes dot {
+	25% {
+	background-color: #5CB6FF;
+	}
 }
 
 
@@ -119,13 +148,6 @@ html.sr .load-hidden {
 	    padding-right: 0;
 	    padding-left: 0;
 	  }
-	}
-
-	.header-links {
-		font-size: 13px;
-		line-height: 18px;
-		margin-left: 10px !important;
-		margin-right: 10px !important;
 	}
 
 	.juvo-site {
@@ -189,27 +211,22 @@ html.sr .load-hidden {
 	#star {
 		display: none;
 	}
-
-	#subtitle {
-		font-size: 10px;
-		line-height: 14px;
-	}
 }
 
 @media all and (min-width: 576px){
 	p {
-		font-size: 13px;
-		line-height: 18px;
+		font-size: 16px;
+		line-height: 20px;
 	}
 
 	h3 {
 		font-size: 24px;
-		line-height: 33px;
+		line-height: 32px;
 	}
 
 	h4 {
 		font-size: 20px;
-		line-height: 27px;
+		line-height: 28px;
 	}
 
 	h6 {
@@ -236,13 +253,6 @@ html.sr .load-hidden {
 	    padding-right: 0;
 	    padding-left: 0;
 	  }
-	}
-
-	.header-links {
-		font-size: 13px;
-		line-height: 18px;
-		margin-left: 10px !important;
-		margin-right: 10px !important;
 	}
 
 	.juvo-site {
@@ -301,32 +311,27 @@ html.sr .load-hidden {
 	#star {
 		display: inline;
 	}
-
-	#subtitle {
-		font-size: 10px;
-		line-height: 14px;
-	}
 }
 
 
 @media all and (min-width: 994px){
 	p {
-		font-size: 15px;
+		font-size: 16px;
 		line-height: 20px;
 	}
 
 	h3 {
 		font-size: 32px;
-		line-height: 44px;
+		line-height: 40px;
 	}
 
 	h4 {
-		font-size: 26px;
-		line-height: 30px;
+		font-size: 28px;
+		line-height: 32px;
 		letter-spacing: 0.25px;	}
 
 	h6 {
-		font-size: 17px;
+		font-size: 16px;
 		line-height: 20px;
 	}
 
@@ -348,13 +353,6 @@ html.sr .load-hidden {
 	    padding-right: 0;
 	    padding-left: 0;
 	  }
-	}
-
-	.header-links {
-		font-size: 17px;
-		line-height: 23px;
-		margin-left: 10px !important;
-		margin-right: 10px !important;
 	}
 
 	.juvo-site {
@@ -417,34 +415,30 @@ html.sr .load-hidden {
 		display: inline;
 	}
 
-	#subtitle {
-		font-size: 12px;
-		line-height: 16px;
-	}
 }
 
 
 @media all and (min-width: 1352px){
 	p {
-		font-size: 17px;
-		line-height: 23px;
+		font-size: 20px;
+		line-height: 28px;
 	}
 
 	h3 {
-		font-size: 51px;
-		line-height: 70px;
+		font-size: 52px;
+		line-height: 64px;
 		color: #FFFFFF;
 	}
 
 	h4 {
-		font-size: 34px;
-		line-height: 46px;
+		font-size: 32px;
+		line-height: 40px;
 		letter-spacing: 0.25px;
 	}
 
 	h6 {
-		font-size: 21px;
-		line-height: 23px;
+		font-size: 24px;
+		line-height: 28px;
 		margin-bottom: 5px !important;
 	}
 
@@ -466,12 +460,6 @@ html.sr .load-hidden {
 	    padding-right: 0;
 	    padding-left: 0;
 	  }
-	}
-
-	.header-links {
-		font-size: 17px;
-		line-height: 23px;
-		letter-spacing: 0.5px;
 	}
 
 	.juvo-site {
@@ -535,8 +523,4 @@ html.sr .load-hidden {
 		display: inline;
 	}
 
-	#subtitle {
-		font-size: 14px;
-		line-height: 19px;
-	}
 }

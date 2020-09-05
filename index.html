@@ -13,19 +13,21 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
 		<script>
 			$( window ).on( "load", readyFn);
 			function readyFn(jQuery) {
 				window.sr = ScrollReveal({ reset: false });
-				sr.reveal(".reveal", { easing: 'ease', duration: 600, distance: '24px', delay: 1000, scale: 1,});
+				// sr.reveal('#body-content', { easing: 'ease', duration: 600, distance: '24px', delay: 2400,scale: 1,});
+				sr.reveal(".reveal0", { easing: 'ease', duration: 600, distance: '-24px', delay: 1800, scale: 1,});
+				sr.reveal(".reveal1", { easing: 'ease', duration: 600, distance: '24px', delay: 2400, scale: 1,});
 			var options = {
 				strings:[
-				'<span style="font-family:Open Sans; color: #ffffff;">Built with <3</span>', 
-				'<span style="font-family:Open Sans; color: #ffffff;">Built with Sublime Text</span>',
-				'<span style="font-family:Open Sans; color: #ffffff;">Built with ☕️</span>',
-				'<span style="font-family:Open Sans; color: #ffffff;">Built with Figma</span>', 
-				'<span style="font-family:Open Sans; color: #ffffff;">Built by Kevin Tian</span>'],
+				'<span><p>Built with <3</p></span>', 
+				'<span><p>Built with Sublime Text</p></span>',
+				'<span><p>Built with ☕️</p></span>',
+				'<span><p>Built with Figma</p></span>', 
+				'<span><p>Built by Kevin Tian</p></span>'],
 				typeSpeed: 40,
 				backSpeed: 25,
 				backDelay: 1500,
@@ -37,18 +39,19 @@
 
 			var toggled = false;
 			$(document).ready(function(){
-				$('#flip_colors_button').click(function() {
+				$('.flip_colors_button').click(function() {
+					$('.flip_colors_button').removeAttr('id');
 					$('.body-content').toggleClass('hidden');
 					$('.image-content').toggle();
-					$('.shortened').toggleClass('hidden');
+					$('.shortened').toggleClass('remove');
 					if (!toggled) {
 						$('body').css('background', '#ffffff');
-						$('#flip_colors_button').css('background-color', '#232323');
+						$('.flip_colors_button').css('background-color', '#232323');
 						toggled = true;
 					}
 					else {
 						$('body').first().css('background', '#232323');
-						$('#flip_colors_button').css('background-color', '#ffffff');
+						$('.flip_colors_button').css('background-color', '#ffffff');
 						toggled = false;
 					}
 			    });
@@ -81,16 +84,20 @@
 		<h1 style="display:none">Duke University</h1>
 
 		<div class="container">
-			<div class="row col-12 reveal load-hidden">
+			<div class="row col-12">
 				<div class="col-lg-5 offset-lg-3 col-md-6 offset-md-2 col-sm-6 offset-sm-1">
-					<p id="flip_colors_button"><a></a></p>
-					<h6 class="shortened hidden" style="color: #232323; margin-bottom: 8px !important;">Hi there 👋</h6>
-					<p class="shortened hidden" style="color: #232323; margin-bottom: 8px !important;">Here's my <a target="_blank" class="shortened hidden" style="color: #249CFF; margin-bottom: 0px !important" href="assets/Resume_Kevin_Tian.pdf">resume and contact info</a>.</p>
-
-					<div class="body-content">
+					<p class="flip_colors_button reveal0 load-hidden" id="animate"><a></a></p>
+					<div class="shortened remove">
+						<h3 style="color: #232323; margin-bottom: 8px !important;">Kevin Tian</h3>
+						<p style="color: #232323; margin-bottom: 8px !important;">Under construction!</p>
+						<img class="headshot" src="images/kevintian.jpg">
+						<!-- <p style="color: #232323;">That's me 👆 </p> -->
+						<p style="color: #232323; margin-bottom: 8px !important;">Meanwhile, take a peek at my <a target="_blank" classstyle="color: #249CFF; margin-bottom: 0px !important" href="assets/Resume_Kevin_Tian.pdf">resume</a>.</p>
+					</div>
+					<div class="body-content reveal1 load-hidden">
 						<h3>Kevin Tian </h3>
-						<p>Nice to meet ya, I'm Kevin! I'm a designer, a senior at Duke University, and a lover of great storytelling. This past summer, I was a UX Design intern at <a href="https://bankofamerica.com">Bank of America</a> and an undergraduate Design Fellow in the <a href="http://designhealth.duke.edu/">Duke Design Health Program</a>.</p>
-						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- explore my work</p>
+						<p>Hi there, I'm Kevin, a designer, a senior at Duke University graduating Dec 2020, and a lover of great storytelling. This summer, I was an Experience Design intern at <a href="https://bankofamerica.com">Bank of America</a> and an undergraduate Design Fellow in the <a href="http://designhealth.duke.edu/">Duke Design Health Program</a>.</p>
+						<p id="subtitle" style="margin-bottom: 16px !important;">- explore selected work</p>
 						<a href="bofa.html" alt="Kevin Tian at Bank of America">
 							<div class="bofa-site image-content" style="margin-bottom: 24px"></div>
 						</a>
@@ -100,7 +107,7 @@
 						<a href="juvo.html" alt="Kevin Tian at Juvo">
 							<div class="juvo-site image-content" ></div>
 						</a>
-						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- core design principles</p>
+						<p id="subtitle">- core design principles</p>
 						<p>The most beautiful design is </p>
 						<div class="row no-gutters align-items-start">
 							<div class="col-lg-3 col-md-3 col-sm-12">
@@ -123,10 +130,10 @@
 							</div>
 						</div>
 						<p>Each of my previous product design experiences reflect my passion for empowering underserved users and highlight my ability to design with these guiding principles even when faced with unique constraints.</p>
-						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- in my free time</p>
+						<p id="subtitle">- in my free time</p>
 						<p>I enjoy writing and reading case studies on my <a href="https://www.medium.com/@kevintian">Medium</a>.</p>
 						<p>As a college student, I've kept myself busy by exploring design principles with the <a href="https://www.hackduke.org">HackDuke Design team</a>; learning traditional and modern-style dance with <a href="https://www.dukechinesedance.com">Duke Chinese Dance</a>; sharing my love of STEM by mentoring Durham middle schoolers with <a href="http://www.sites.duke.edu/innoworks/our-story">Duke Innoworks</a>; and playing tennis with the Club Tennis team.</p>
-						<p style="color: rgba(255, 255, 255, 0.5); margin-bottom: 8px !important; margin-top: 32px !important;">- let's connect</p>
+						<p id="subtitle">- let's connect</p>
 						<p>Take a look at my <a target="_blank" class='links' href='assets/Resume_Kevin_Tian.pdf'>resume</a>, reach out by email at kevin.tian@duke.edu, or connect with me on <a class='links' href='https://www.linkedin.com/in/kev-in'>LinkedIn</a>.</p>
 						<div id="from-scratch">
 							<span id="typed"></span>
